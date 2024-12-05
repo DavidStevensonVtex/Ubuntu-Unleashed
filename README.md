@@ -18,7 +18,7 @@ In addition to being useful for adding drives, GParted can also assist you in re
 from problems. You can run it after booting Ubuntu in a live session or running from a
 live CD or a USB drive.
 
-# Shutting down Using the Command Line
+### Shutting down Using the Command Line
 
 ```
 sudo shutdown -h now
@@ -26,4 +26,21 @@ sudo shutdown -h now
 or
 
 sudo shutdown -r now
+```
+
+### Software Updater
+
+Click Activities and search for software updater
+
+```
+sudo apt update
+
+sudo apt-get update
+
+```
+
+For a full upgrade:
+
+```
+sudo apt full-upgrade
 ```
