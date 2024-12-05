@@ -104,3 +104,10 @@ sudo hwclock --set --date "09/28/18 10:33:00"
 dmesg > dmesg.txt
 less dmesg.txt
 ```
+
+## Chapter 2: Background Information and Resources
+
+```
+uname -v -r
+5.4.0-200-generic #220-Ubuntu SMP Fri Sep 27 13:19:16 UTC 2024
+```
