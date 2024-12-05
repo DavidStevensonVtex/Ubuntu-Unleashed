@@ -111,3 +111,33 @@ less dmesg.txt
 uname -v -r
 5.4.0-200-generic #220-Ubuntu SMP Fri Sep 27 13:19:16 UTC 2024
 ```
+
+### Linux Guides and Books
+
+[Advanced Bash-Scripting Guide, by Mendel Cooper](https://tldp.org/LDP/abs/html/)
+
+[LDP Author Guide, by Mark F. Komarinksi and others](http:www.tldp.org/LDP/LDP-Author-Guide/html/index.html)
+
+[Linux Administration Made Easy, by Steve Frampton](https://tldp.org/LDP/lame/LAME/linux-admin-made-easy/)
+
+[Securing and Optimizing Linux, by Gerhard Mourani](https://www.amazon.com/Securing-Optimizing-Linux-Hacking-Solution/dp/0968879314)
+
+[Practical Guide to Linux Commands, Editors, and Shell Programming, A 4th Edition](https://www.amazon.com/Practical-Guide-Commands-Editors-Programming/dp/0134774604/ref=sr_1_1)
+
+[UNIX and Linux System Administration Handbook, 4th edition by Evi Nemeth, Garth Snyder, Trent R. Hein and Ben Whalel](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0134277554)
+
+[The Practice of System and Network Administration, 2nd edition by Thomas A. Limoncelli, Christina J. Hogan, and Strata R. Chalup](https://www.amazon.com/Practice-System-Network-Administration-Enterprise/dp/0321919165/ref=sr_1_1)
+
+### Ubuntu
+
+[Ubuntu](https://www.ubuntu.com/)
+
+[Ubuntu Help](https://help.ubuntu.com/)
+
+[Ubuntu Forums](https://www.ubuntuforums.org/)
+
+[Ask Ubuntu](https://askubuntu.com/)
+
+[Ubuntu Tutorials](https://tutorials.ubuntu.com/)
+
+[Ubuntu Community](https://community.ubuntu.com/)
