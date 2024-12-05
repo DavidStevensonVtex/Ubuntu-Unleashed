@@ -141,3 +141,12 @@ uname -v -r
 [Ubuntu Tutorials](https://tutorials.ubuntu.com/)
 
 [Ubuntu Community](https://community.ubuntu.com/)
+
+### Internet Relay Chat
+
+[8 Best IRC Clients for Linux in 2024](https://www.tecmint.com/best-irc-clients-for-linux/)
+
+Channels
+
+* #linux
+* #linuxhelp
