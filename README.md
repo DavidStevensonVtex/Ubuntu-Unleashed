@@ -83,3 +83,24 @@ git config --global user.name "David Stevenson"
 git config --global user.email "drstevenson1958@yahoo.com"
 git config --list
 ```
+
+### The sudo Command
+
+```sudo command commandoptions```
+
+Login as root
+```sudo -i```
+
+### Using the hwclock command to set system time
+
+```
+sudo hwclock --show
+sudo hwclock --set --date "09/28/18 10:33:00"
+```
+
+### Troubleshooting Post-Installation Configuration Problems
+
+```
+dmesg > dmesg.txt
+less dmesg.txt
+```
