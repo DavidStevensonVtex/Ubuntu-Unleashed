@@ -22,4 +22,8 @@ live CD or a USB drive.
 
 ```
 sudo shutdown -h now
+
+or
+
+sudo shutdown -r now
 ```
