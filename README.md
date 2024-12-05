@@ -44,3 +44,42 @@ For a full upgrade:
 ```
 sudo apt full-upgrade
 ```
+
+### What version of Ubuntu am I running?
+
+I just upgraded to Ubuntu 20.04
+
+```
+lsb_release -a
+dstevenson@dstevensonlinux1:~/Ubuntu$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.6 LTS
+Release:	20.04
+Codename:	focal
+```
+
+```
+cat /etc/os-release
+dstevenson@dstevensonlinux1:~/Ubuntu$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+```
+
+### Configuring User Name and Email in Git
+
+```
+git config --global user.name "David Stevenson"
+git config --global user.email "drstevenson1958@yahoo.com"
+git config --list
+```
