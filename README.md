@@ -239,3 +239,10 @@ pdfedit is available.
 * Publican - publication system for DocBook
 * [XML Copy Editor](http://xml-copy-editor.sourceforge.net/) - Designed for most markup languages
 
+### Working with LaTex
+
+Some LaTex editors are availble from the Ubuntu Software Center.
+
+* [Texmaker](http:www.xm1math.net/texmaker/)
+* [LyX](http://www.lyx.org/)
+* [Kile](http://kile.sourceforge.net)
