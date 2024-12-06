@@ -237,4 +237,5 @@ pdfedit is available.
 
 * gedit - called Text Editor in the Dash
 * Publican - publication system for DocBook
-* XML Copy Editor - Designed for most markup languages
+* [XML Copy Editor](http://xml-copy-editor.sourceforge.net/) - Designed for most markup languages
+
