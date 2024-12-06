@@ -266,3 +266,10 @@ using [Wine](https://appdb.winehq.org/).
 
 * [ALSA](http://alsa-project.org/main/index.php/Main_Page) - *Advanced Linux Sound Architecture*
 * OSS - *Open Sound System*
+
+### Adjusting Volume
+
+Click the speaker icon in the top-right corner of the screen and move slider left or right.
+
+Alteratively: Settings: Sound tab
+
