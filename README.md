@@ -458,3 +458,12 @@ processor to record television programming witha variety of customizations.
 
 You can now create and edit video in Ubuntu by using PiTiVi. Searchfor: "PiTiVi video editor" in the
 Ubuntu Software Center.
+
+#### References
+
+* [VLC - VideoLan](http://www.videolan.org/) - A multimedia player project that will play almost anything
+* [HOWTO for creating DVDs under Linux](http://fy.chalmers.se/~appro/linux/DVD+RW/)
+* [gimp](http://www.gimp.org/)
+* [SANE - Scanner Access Now Easy](http://www.sane-project.org/)
+* [ImageMagick](http://www.imagemagick.org)
+* [GIMP Tutorials](http://gimp.net/tutorials/)
