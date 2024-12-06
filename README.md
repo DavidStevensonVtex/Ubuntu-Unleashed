@@ -174,3 +174,6 @@ find /usr -name xorg.conf
 ### References
 
 [GNOME](https://www.gnome.org)
+
+## Chapter 4: On the Internet
+
