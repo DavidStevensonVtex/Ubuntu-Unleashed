@@ -170,3 +170,7 @@ Some important subdirectories are as follows:
 find /usr -name xorg.conf
 /usr/share/doc/xserver-xorg-video-intel/xorg.conf
 ```
+
+### References
+
+[GNOME](https://www.gnome.org)
