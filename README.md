@@ -287,4 +287,14 @@ GNOME applications.
 
 To convert between sound formats, use the *sox* command.
 
+### Listening to Music
 
+#### Rhythmbox
+
+Plays audio CDs. Can copy music to your computer.
+
+[Ubuntu Podcast](http://ubuntupodcast.org/)
+
+#### Banshee
+
+Another music application that can rip and play back music.
