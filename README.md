@@ -150,3 +150,7 @@ Channels
 
 * #linux
 * #linuxhelp
+
+## Chapter 3: Working with GNOME
+
+[Wayland](https://wayland.freedesktop.org)
