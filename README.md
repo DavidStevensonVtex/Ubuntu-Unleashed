@@ -154,3 +154,19 @@ Channels
 ## Chapter 3: Working with GNOME
 
 [Wayland](https://wayland.freedesktop.org)
+
+### Using X
+
+The /usr directory and its subdirectories contain the majority of the Xorg software.
+Some important subdirectories are as follows:
+
+* /usr/bin
+* /usr/include
+* /usr/lib
+* /usr/lib/X11
+* /usr/lib/modules
+
+```
+find /usr -name xorg.conf
+/usr/share/doc/xserver-xorg-video-intel/xorg.conf
+```
