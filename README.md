@@ -232,3 +232,8 @@ Reading a PDF in Ubuntu is available by default. It opens in Evince.
 You can also install Adobe Reader from the Ubuntu Software Center from the Canonical Partners section.
 
 pdfedit is available.
+
+### Working with XML and DocBook
+
+* gedit - called Text Editor in the Dash
+* Publican - publication system for DocBook

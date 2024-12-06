@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<xml-stylesheet type="text/css" href="book.css">
+<book>
+<title>Ubuntu Unleashed 2013</title>
+<edition>8</edition>
+<chapter>
+    <number>1</number>
+    <title>Installing Ubuntu</title>
+    <text>
+        <paragraph><dropcap>N</dropcap>ot that long ago, the mere mention...</paragraph>
+    </text>
+</chapter>
+</book>
