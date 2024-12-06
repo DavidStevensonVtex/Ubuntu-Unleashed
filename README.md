@@ -348,3 +348,50 @@ Search Activities for paint
 * [POV-Ray](http://www.povray.org/)
 * [Radiance](http://www.radiance-online.org/)
 * [Xara Xtreme](http://www.xaraxtreme.org) - A general purpose graphics editor
+
+#### Using Digital Cameras with Ubuntu
+
+##### Handheld Digital Cameras
+
+##### Using Shotwell Photo Manager
+
+[Shotwell Photo Manager](https://shotwell-project.org/doc/html/index.html)
+
+### Burning CDs and DVDs in Ubuntu
+
+Learning how to burn discs is essential if you have to download and install a Linux distribution
+
+*Ripping* refers to extracting music tracks from a music CD.
+
+#### Creating CDs and DVDs with Brasero
+
+Brasero is a graphical client.
+It also creates ISO files, which are disc images that contain everything that would exist on the medium if you burned a real CD or DVD in one file that can be mounted by computer file systems.
+
+#### Creating CDs from the Command Line
+
+use the *mkisofs* command to create the ISO image.
+
+```
+mkisofs -r -v -J -1 -o /tmp/our_special_cd.iso /source_directory
+```
+* -r - sets the permissions
+* -v - displays verbose messages
+* -J - uses the Joliet extensions to ISO9660 so that Windows can read the CD
+* -1 - allows 31 character filenames; DOS does not like it, but everyone else does
+* -o - defines the directory where the image will be written
+* /source_directory - indicates the path to the source directory
+
+```
+cdrecord -eject -v speed-12 dev=0,0,0 /tmp/our_special_cd.iso
+```
+
+* -eject - Ejects the CD when the write operation is finished
+* -v - Displays verbose messages
+* speed= - Sets the speed, depends on drive
+* dev= - Specifies the device number of the CD writer
+
+You can also use the blank=option with the *cdrecord* command to erase CD-RW discs
+
+Current capacity for CD media is 7000MB of data or 80 minutes of music.
+
