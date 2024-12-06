@@ -251,3 +251,11 @@ Some LaTex editors are availble from the Ubuntu Software Center.
 
 Some Microsoft Windows applications can be installed and run in Linux 
 using [Wine](https://appdb.winehq.org/).
+
+### References
+
+* [LibreOffice](http://www.libreoffice.org/)
+* [Document Foundation](http://www.documentfoundation.org/)
+* [Open Office](http://www.openoffice.org)
+* [PDF Edit](http://www.pdfedit.cz/en/index.html)
+* [CodeWeavers CrossOver Office](http://www.codeweavers.com/) Enables some Windows programs to run under Linux.
