@@ -330,3 +330,10 @@ convert image.gif image.png
 * pgm - portable graymap file format
 * pnm - portable anymap file format
 * pbm - portable bitmap file format
+
+#### Capturing Screen Images
+
+Search Activities for screenshot
+
+Search Activities for paint
+
