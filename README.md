@@ -273,3 +273,18 @@ Click the speaker icon in the top-right corner of the screen and move slider lef
 
 Alteratively: Settings: Sound tab
 
+### Sound Formats
+
+* RAW (.raw) - *headerless format*
+* MP3 (.mp3)
+* WAV (.wav) - Uncompressed Windows audiovisual sound format
+* OGG Vorbis (.ogg) - Ubuntu's preferred audio encoding format.
+* FLAC (.flac) - *Free Lossless Audio Format*
+
+For MP3, download a plugin for GStreamer.
+Install the gstreamer0.10-plugins-ugly package, which enables the MP3 codec in all the
+GNOME applications.
+
+To convert between sound formats, use the *sox* command.
+
+
