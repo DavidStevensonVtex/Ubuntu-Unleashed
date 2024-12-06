@@ -177,3 +177,16 @@ find /usr -name xorg.conf
 
 ## Chapter 4: On the Internet
 
+### Internet Relay Chat
+
+#### IRC Clients
+
+* XChat
+* Pidgin
+* Quassel
+* HexChat
+
+Console Clients
+
+* epic
+* irssi
