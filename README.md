@@ -414,3 +414,27 @@ to *mkisofs*) and the DVD formatting utility.
 Caution: 
 Some DVDs come pre-formatted: formatting them again makes them useless.
 
+### Viewing Video
+
+#### TV and Video Hardware
+
+Install a TV Card
+
+[Current list of TV and video cards supported in Linux](http://linuxtv.org/index.php/Main_page)
+
+To determine what chipset yoru TV card has:
+
+```
+lspci
+```
+
+#### Video Formats
+
+* AVI (.avi) - The Windows audiovisual format
+* FLV (.flv) - Used in Adobe Flash
+* MPEG (.mpeg) - The MPEG video format, also known as .mpg
+* MOV (.mov) - A QuickTime video format
+* OGV/OGG (.ogv/.ogg) - The Ogg Theora freely licensed video format
+* QT (.qt) - The QuickTime video format from Apple
+* WEBM (.webm) - Google's royalty-free container for audio and video, designed for HTML5
+
