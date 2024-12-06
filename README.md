@@ -202,3 +202,26 @@ Console Clients
 
 * [www.mozilla.com](https://www.mozilla.com/) -- The home page for Mozilla Firefox and Thunderbird
 * [A history of Usenet](http://en.wikipedia.org/wiki/Usenet)
+
+## Chapter 5: Productivity Applications
+
+### Introducing LibreOffice
+
+* Writer - Word Processing
+* Calc - Spreadsheet
+* Impress - Presentations
+
+All but Dia are part of the LibreOffice project:
+
+* Math - Math Formula Editor
+* Base - Database application
+* Draw - Graphics application
+* Dia - Technical Drawing Editor
+* Planner - Project Management
+
+Competitive Productivity Application Suites
+
+* Oracle - Open Office
+* IBM - Lotus Symphony
+* LibreOffice
+
