@@ -438,3 +438,23 @@ lspci
 * QT (.qt) - The QuickTime video format from Apple
 * WEBM (.webm) - Google's royalty-free container for audio and video, designed for HTML5
 
+#### Viewing Video in Linux
+
+Install the ubuntu-restricted-extras package from the Ubuntu software repositories.
+
+You can watch video files and video DVDs with the Totem Movie Player, which is installed by default.
+
+Another interesting video viewer application is VLC, which is available in the software repositories and also for other operating systems.
+
+#### Personal Video Recorders
+
+The best reason to attach a television recorder antenna to your computer is to use the video card
+and the computer as a personal video recorder.
+
+The commercial personalvideo recorder TiVo started a new trend by using Linux running on a PowerPC  
+processor to record television programming witha variety of customizations.
+
+#### Video Editing
+
+You can now create and edit video in Ubuntu by using PiTiVi. Searchfor: "PiTiVi video editor" in the
+Ubuntu Software Center.
