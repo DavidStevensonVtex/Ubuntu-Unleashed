@@ -395,3 +395,22 @@ You can also use the blank=option with the *cdrecord* command to erase CD-RW dis
 
 Current capacity for CD media is 7000MB of data or 80 minutes of music.
 
+#### Creating DVDs from the Command Line
+
+DVD Formats:
+
+* DVD+R
+* DVD-R
+* DVD+RW
+* DVD-RW
+
+You need to have the dvd+rw-tools package installed, as well as the cdrtools package.
+The dvd+rw-tools package contains the growisofs applicatin (which acts as a front end
+to *mkisofs*) and the DVD formatting utility.
+
+1. Format the disc with dvd+rw-format /dev/scd0, where /dev/scdo is the device name for your drive.
+2. Write your data to the disc with growisofs -Z /dev/scd0 -R -J /your_files
+
+Caution: 
+Some DVDs come pre-formatted: formatting them again makes them useless.
+
