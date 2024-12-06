@@ -246,3 +246,8 @@ Some LaTex editors are availble from the Ubuntu Software Center.
 * [Texmaker](http:www.xm1math.net/texmaker/)
 * [LyX](http://www.lyx.org/)
 * [Kile](http://kile.sourceforge.net)
+
+### Productivity Applications Written for Microsoft Windows
+
+Some Microsoft Windows applications can be installed and run in Linux 
+using [Wine](https://appdb.winehq.org/).
