@@ -177,6 +177,11 @@ find /usr -name xorg.conf
 
 ## Chapter 4: On the Internet
 
+### Choosing an Email Client
+
+* Mozilla Thunderbird
+* Evolution - Email, Contacts and Calendars
+
 ### Internet Relay Chat
 
 #### IRC Clients
@@ -190,3 +195,10 @@ Console Clients
 
 * epic
 * irssi
+
+### Usenet Newsgroups
+
+### References
+
+* [www.mozilla.com](https://www.mozilla.com/) -- The home page for Mozilla Firefox and Thunderbird
+* [A history of Usenet](http://en.wikipedia.org/wiki/Usenet)
