@@ -259,3 +259,10 @@ using [Wine](https://appdb.winehq.org/).
 * [Open Office](http://www.openoffice.org)
 * [PDF Edit](http://www.pdfedit.cz/en/index.html)
 * [CodeWeavers CrossOver Office](http://www.codeweavers.com/) Enables some Windows programs to run under Linux.
+
+## Chapter 6: Multimedia Applications
+
+### Sound Cards
+
+* [ALSA](http://alsa-project.org/main/index.php/Main_Page) - *Advanced Linux Sound Architecture*
+* OSS - *Open Sound System*
