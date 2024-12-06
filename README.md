@@ -337,3 +337,14 @@ Search Activities for screenshot
 
 Search Activities for paint
 
+#### Other Graphics Manipulation Options
+
+* [Blender](http://www.blender.org/) - 3-D image and animation editor
+* [CinePaint](http://www.cinepaint.org/) - A powerful and complex tool used by Hollywood studios
+* [darktable](http://www.darktable.org) - A RAW editor
+* [digiKam](http://www.digikam.org/) - Photo management software
+* [Hugin](http://hugin.sourceforge.net/) - Panoramic photo stitcher
+* [Inkscape](http://inkscape.org/) - SVG - Vector Graphics creation and editing tool
+* [POV-Ray](http://www.povray.org/)
+* [Radiance](http://www.radiance-online.org/)
+* [Xara Xtreme](http://www.xaraxtreme.org) - A general purpose graphics editor
