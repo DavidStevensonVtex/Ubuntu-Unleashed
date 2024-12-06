@@ -298,3 +298,35 @@ Plays audio CDs. Can copy music to your computer.
 #### Banshee
 
 Another music application that can rip and play back music.
+
+### Graphics Manipulation
+
+Installed by default: [Shotwell Photo Manager](https://shotwell-project.org/doc/html/index.html)
+
+#### The GNU Image Manipulation Program (GIMP)
+
+GIMP is free, but not installed by default.
+
+#### Using Scanners in Ubuntu
+
+Simple Scan is installed by default.
+
+#### Working with Graphics Formats
+
+* BMP (.bmp) - Bitmapped graphics, typically used in Microsoft Windows
+* GIF (.gif) - CompuServe Graphics Interchange Format
+* JPG (.jpg) - Joint Photographic Experts Group
+* PCX (.pcx) - IBM Paintbrush
+* PNG (.png) - Portable Network Graphics
+* SVG (.svg) - Scalable Vector Graphics
+* TIF (.tif) - Tagged Image File Format
+
+*convert* utility from ImageMagick, *netpbm* family of utilities
+```
+convert image.gif image.png
+```
+
+* ppm - portable pixmap file format
+* pgm - portable graymap file format
+* pnm - portable anymap file format
+* pbm - portable bitmap file format
