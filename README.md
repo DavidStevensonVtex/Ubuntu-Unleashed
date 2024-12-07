@@ -581,3 +581,26 @@ https://www.gamingonlinux.com/itemdb.php
 * Speed Dreams
 * Games for Kids
 * Commercial Games
+
+#### Playing Windows Games
+
+*Wine* runs a large number of Windows programs, including many games.
+
+#### References
+
+* [Warsow](http://www.warsow.net/)
+* [Scorched 3D](http://www.scorched3d.co.uk/)
+* [Frozen Bubble](http://www.frozen-bubble.org/) Obsolete?
+* [SuperTux](http://supertux.lethargik.org/)
+* [Battle for Wesnoth](http://wesnoth.org/)
+* [gCompris](http://gcompris.net/) Children's games?
+* [Frets on Fire](http://fretsonfire.sourceforge.net)
+* [Childsplay](http://childsplay.sourceforge.net/)
+* [Tux Paint](http://www.tuxpaint.org/)
+* [FlightGear](http://www.flightgear.org/)
+* [Speed Dreams](http://www.speed-dreams.org/)
+* [Games on Ubuntu](https://help.ubuntu.com/community/Games)
+* [NVIDIA Unix/Linux drivers](http://www.nvidia.com/object/unix.html)
+* [Wine - Wine Is Not an Emulator](http://help.ubuntu.com/community/Wine)
+* [Wine HQ](http://www.winehq.org/)
+
