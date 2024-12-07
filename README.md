@@ -568,3 +568,16 @@ https://www.protondb.com/
 https://www.gamingonlinux.com/itemdb.php
 
 #### [Game Jolt](https://gamejolt.com/games/best?os=linux)
+
+### Installing Games in Ubuntu
+
+* Warsow
+* Scorched 3D
+* Frozen Bubble
+* SuperTux
+* [Battle for Wesnoth](http://wesnoth.org/)
+* Frets on Fire
+* FlightGear
+* Speed Dreams
+* Games for Kids
+* Commercial Games
