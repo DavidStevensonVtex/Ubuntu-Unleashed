@@ -611,3 +611,10 @@ https://www.gamingonlinux.com/itemdb.php
 ```
 gnome-software
 ```
+
+### Using Synaptic for Software Management
+
+If you need to install something specific -- such as a library -- you need to use Synaptic.
+
+You can install Synaptic by using Ubuntu Software.
+
