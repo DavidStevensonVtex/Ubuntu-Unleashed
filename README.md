@@ -487,3 +487,39 @@ Ubuntu Software Center.
 #### Ubuntu Kylin
 
 Ubuntu Kylin is Ubuntu localized for China.
+
+#### References
+
+[Metacity blog](http://blogs.gnome.org/metacity/2007/12/23/start-reading-here/) “Many window managers are like Marshmallow Froot Loops; Metacity is like Cheerios.”
+
+[Compiz](http://www.compiz.org/) Web site unavailable?
+
+[Enlightenment](http://www.enlightenment.org/)
+
+[KDE Desktop](http://www.kde.org/)
+
+[Kubuntu](http://www.kubuntu.org/)
+
+[Xfce](http://www.xfce.org/)
+
+[xubuntu](http://www.xubuntu.org/)
+
+[LXDE](https://www.lxde.org/) 
+
+[Lubuntu](http://lubuntu.net/)
+
+[GNOME](http://www.gnome.org/)
+
+[Ubuntu Budgie](http://ubuntubudgie.org/)
+
+[Ubuntu MATE](http://ubuntu-mate.org/)
+
+[Ubuntu Kylin](https://wiki.ubuntu.com/UbuntuKylin) The English language resource for Ubuntu Kylin
+
+[Ubuntu Derivatives](http://www.ubuntu.com/project/about-ubuntu/derivatives)
+
+[Live CD/DVD Linux distribution, Knoppix](http://www.knoppix.net/)
+
+[Desktop Envionment Wiki (General)](http://en.wikipedia.org/wiki/Desktop_environment)
+
+[Comparison of X Window System desktop environments wiki](http://en.wikipedia.org/wiki/Comparison_of_X_Window_System_desktop_environments)
