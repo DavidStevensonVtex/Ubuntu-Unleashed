@@ -547,10 +547,24 @@ Open Software & Updates and select the Additional Drivers tab.
 
 ### Online Game Sources
 
-#### Steam
+#### [Steam](http://steampowered.com/)
 
 Steam is a cross-platform entertainment platform.
 
 Steam is created by Valve Software, usually referred toas just "Valve".
 
 [Valve and Steam](http://store.steampowered.com/)
+
+#### [GOG.com](https://www.gog.com/games)
+
+#### [Humble](https://www.humblebundle.com/store)
+
+#### [Itch.io](https://itch.io/games)
+
+#### [LGDB - Linux Game Database](https://lgdb.org/games)
+
+https://www.protondb.com/
+
+https://www.gamingonlinux.com/itemdb.php
+
+#### [Game Jolt](https://gamejolt.com/games/best?os=linux)
