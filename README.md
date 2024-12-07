@@ -606,3 +606,8 @@ https://www.gamingonlinux.com/itemdb.php
 
 ## Chapter 9: Managing Software
 
+### Ubuntu Software
+
+```
+gnome-software
+```
