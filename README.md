@@ -467,3 +467,8 @@ Ubuntu Software Center.
 * [SANE - Scanner Access Now Easy](http://www.sane-project.org/)
 * [ImageMagick](http://www.imagemagick.org)
 * [GIMP Tutorials](http://gimp.net/tutorials/)
+
+## Chapter 7: Other Ubuntu Interfaces
+
+### Desktop Environment
+
