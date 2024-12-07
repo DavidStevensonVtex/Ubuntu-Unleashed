@@ -604,3 +604,5 @@ https://www.gamingonlinux.com/itemdb.php
 * [Wine - Wine Is Not an Emulator](http://help.ubuntu.com/community/Wine)
 * [Wine HQ](http://www.winehq.org/)
 
+## Chapter 9: Managing Software
+
