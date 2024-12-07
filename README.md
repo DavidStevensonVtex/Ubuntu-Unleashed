@@ -472,3 +472,18 @@ Ubuntu Software Center.
 
 ### Desktop Environment
 
+#### KDE and Kubuntu
+
+#### Xfce and Xubuntu
+
+#### LXDE and Lubuntu
+
+#### MATE and Ubuntu MATE
+
+#### Ubuntu Budgie
+
+[Ubuntu Budgie Desktop](https://ubuntubudgie.org/)
+
+#### Ubuntu Kylin
+
+Ubuntu Kylin is Ubuntu localized for China.
