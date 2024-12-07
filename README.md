@@ -523,3 +523,34 @@ Ubuntu Kylin is Ubuntu localized for China.
 [Desktop Envionment Wiki (General)](http://en.wikipedia.org/wiki/Desktop_environment)
 
 [Comparison of X Window System desktop environments wiki](http://en.wikipedia.org/wiki/Comparison_of_X_Window_System_desktop_environments)
+
+## Chapter 8: Games
+
+### Ubuntu Gaming
+
+Emulators enable you to play classic games.
+
+There are emulators for DOS, NES, SNES, and many more platforms.
+
+* DGen/SDL
+* DOSBox
+* xtrs
+* FCE Ultra
+* GnGeo
+* SDLMame
+* ScummVM
+* Stella
+
+### Installing Proprietary Video Drivers
+
+Open Software & Updates and select the Additional Drivers tab.
+
+### Online Game Sources
+
+#### Steam
+
+Steam is a cross-platform entertainment platform.
+
+Steam is created by Valve Software, usually referred toas just "Valve".
+
+[Valve and Steam](http://store.steampowered.com/)
