@@ -695,3 +695,10 @@ Next, create a new debian/changelog entry. Enter a message that ells why a new v
 made, perhaps something like Matthew's flight of fancy with extra sauce.
 
 `dch -i`
+
+### Configuration Management
+
+#### dotdee
+
+If you run Linux-based systems, you will find a series of directories that end with a .d and that store configuration files. These are sometimes called .d or "dot dee" directories.
+
