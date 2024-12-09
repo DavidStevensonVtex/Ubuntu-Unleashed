@@ -761,3 +761,24 @@ with the name or IP address of the remote computer:
 
 `ssh 192.168.0.41`
 
+#### User Accounts
+
+To use super user privileges from the command line, you need to preface the command 
+you want to execute with another command, `sudo` (super user do), followed by a space and the command 
+you want to run. You will then be prompted by the password.
+
+In Ubuntu, the root account is disabled by default because forcing users with super user privileges
+to type a specific command every thime they want to execute a command as a super user 
+should have the benefit of making them carefully consider what they are doing when they
+use that power.
+
+However, if you are more experienced and comfortable with the more traditional method of
+using super user privileges and want to enable the root account, you can use the command
+`sudo passwd`.
+
+An alternative way of getting a root prompt, without having to enable the root account,
+is to issue the command `sudo -i`. After entering your password, you find yourself at a
+root prompt (#). Do what you need to do, and when you are finished type exit and press 
+Enter to return to your usual prompt.
+
+[sudo and root](https://help.ubuntu.com/community/RootSudo)
