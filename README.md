@@ -753,3 +753,11 @@ Print Working Directory (pwd)
 #### Logging Out
 
 Use the `exit` or `logout` command or press `Ctrl-D` to end your session.
+
+#### Logging In and Out from a Remote Computer
+
+The ssh client features many command-line options but can simply be used 
+with the name or IP address of the remote computer:
+
+`ssh 192.168.0.41`
+
