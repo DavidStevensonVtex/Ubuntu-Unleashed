@@ -618,3 +618,18 @@ If you need to install something specific -- such as a library -- you need to us
 
 You can install Synaptic by using Ubuntu Software.
 
+#### Day to Day Usage
+
+```sudo apt-get update && sudo apt-get upgrade```
+
+#### Sample install of MySQL 
+
+```sudo apt-get install mysql-sever mailx```
+
+#### Finding Software
+
+```apt-cache search kde```
+
+Search only in package names, not in their descriptions by using the -n parameter
+
+```apt-cache -n search kde```
