@@ -844,3 +844,36 @@ The `/var` directory contains subdirectories used by various system services for
 
 Also used for FTP.
 
+### Navigating the Linux File System
+
+#### Listing the Contents of a Directory with `ls`
+
+`ls`
+
+You can see all the hidden files by adding the "-a" command line option.
+
+`ls -a`
+
+`ls -al`
+
+Recursively view directories and sub-directories
+
+`ls -R`
+
+`ls -laR > listing.txt`
+
+#### Changing Directories with `cd`
+
+`cd somedir`
+
+`cd /home/matthew/stuff/somedir`
+
+`cd ..`
+
+`cd $HOME`
+
+`cd ~`
+
+#### Finding Your Current Directory with `pwd`
+
+`pwd`
