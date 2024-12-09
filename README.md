@@ -702,3 +702,21 @@ made, perhaps something like Matthew's flight of fancy with extra sauce.
 
 If you run Linux-based systems, you will find a series of directories that end with a .d and that store configuration files. These are sometimes called .d or "dot dee" directories.
 
+### Ubuntu Core
+
+### Using Snaps
+
+Software bundles that can be packaged using Ubuntu Core are called snaps. Snaps can be 
+installed using Ubuntu Software or from the command line.
+
+
+```
+snap find
+snap find searchterm
+# To install a snap package
+sudo snap install packagename
+snap list
+sudo snap refresh packagename
+snap changes
+```
+
