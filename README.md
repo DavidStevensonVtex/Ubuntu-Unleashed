@@ -633,3 +633,65 @@ You can install Synaptic by using Ubuntu Software.
 Search only in package names, not in their descriptions by using the -n parameter
 
 ```apt-cache -n search kde```
+
+#### Using apt instead of apt-get
+
+There is a new simplified to APT that removes the hyphen and the second part of the command.
+It also includes lovely updates like a progress bar.
+
+### Compiling Software from Source
+
+Two ways you to do it:
+
+* Use the source code available in Ubuntu repositories
+* Use the source code provided by upstream developers
+
+For either method, you need to install the `build-essential` package to ensure
+you have the tools you need for compilation. You may also need to install 
+`automake` and `checkinstall`, which are build tools.
+
+#### Compiling from a Tarball
+
+```
+tar zxvf packagename.tgz -C ~/source
+tar zxvf packagename.tar.gz -C ~/source
+tar zxvf packagename.bz -C ~/source
+tar zxvf packagename.tar.bz2 -C ~/source
+```
+
+If you are not certain what file compression method was used, use the file command
+to figure it out:
+
+```file packagename```
+
+Change directories to ~/source/packagename and look for a file named README, INSTALL, or
+something similar. 
+
+Typically, the procedure to compile source code is as follows:
+
+```./configure```
+
+```make```
+
+```sudo make install```
+
+In case of error, run `make clean` beforee trying again.
+
+You may also need to remove the software: `sudo make uninstall`
+
+#### Compiling from Source from the Ubuntu Repositories
+
+First, get the source from the Ubuntu repositories:
+
+```apt-get source foo```
+
+Install the build dependencies:
+
+```sudo apt-get build-dep foo```
+
+```cd foo-4.5.2```
+
+Next, create a new debian/changelog entry. Enter a message that ells why a new version was 
+made, perhaps something like Matthew's flight of fancy with extra sauce.
+
+`dch -i`
