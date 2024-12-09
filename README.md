@@ -720,3 +720,8 @@ sudo snap refresh packagename
 snap changes
 ```
 
+### References
+
+* [History of the Debian Linux package system](https://www.debian.org/manuals/project-history/ch-detailed.en.html)
+
+* [Synaptic package manager](http://www.nongnu.org/synaptic/)
