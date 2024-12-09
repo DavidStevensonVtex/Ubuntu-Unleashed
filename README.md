@@ -747,3 +747,9 @@ Ubuntu by default has like 6 black screens (ttys), and 7th is the gui
 ### Text-Based Console Login
 
 Type user name and password when prompted.
+
+Print Working Directory (pwd)
+
+#### Logging Out
+
+Use the `exit` or `logout` command or press `Ctrl-D` to end your session.
