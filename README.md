@@ -796,3 +796,13 @@ Use the man command like this:
 
 `info info`
 
+#### Using `apropos`
+
+`apropos partition`
+
+#### Using `whereis`
+
+To find a command and its documentation, you can use the `whereis` command.
+
+`whereis fdisk
+
