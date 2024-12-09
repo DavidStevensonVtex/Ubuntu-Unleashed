@@ -806,3 +806,41 @@ To find a command and its documentation, you can use the `whereis` command.
 
 `whereis fdisk
 
+### Understanding the Linux File System
+
+Man page for the Linux file system hierarchy:
+
+`man hier`
+
+#### Essential Commands in `/bin` and `/sbin`
+
+#### Configuration Files in /etc
+
+* fastab - The file system table
+* modprobe.d - instructions to load kernel modules
+* passwd - This file holds the list of users for the system
+* sudoers - This file holds a list of users or user groups with super user access
+
+#### User Directories: /home
+
+#### Using the Contents of the `/proc` Directory to Interace with the Kernel
+
+The contents of the `/proc` directory are created from memory and exist only while
+Linux is running.
+
+`free`
+
+`cat /proc/meminfo`
+
+#### Working with Shared Data in the `/usr/` Directory
+
+#### Temporary File Storage in the `/tmp` Directory
+
+Used for Temporary File Storage
+
+#### Accessing Variable Data Files in the `/var` Directory
+
+The `/var` directory contains subdirectories used by various system services for spooling and logging.
+
+Also used for FTP.
+
