@@ -725,3 +725,25 @@ snap changes
 * [History of the Debian Linux package system](https://www.debian.org/manuals/project-history/ch-detailed.en.html)
 
 * [Synaptic package manager](http://www.nongnu.org/synaptic/)
+
+## Chapter 10: Command-Line Beginner's Class
+
+### What is the Command Line?
+
+### Accessing the Command Line
+
+To start a terminal window (from the command line):
+
+```gnome-terminal```
+
+Doesn't work: `Ctrl-Alt-F1` starts a command line window.
+2-6 might work.
+
+Ctrl-Alt-F7 does't return to a graphical interface.
+
+Another way, just press Alt + right or left arrow couple times, until you get out of gui. 
+Ubuntu by default has like 6 black screens (ttys), and 7th is the gui 
+
+### Text-Based Console Login
+
+Type user name and password when prompted.
