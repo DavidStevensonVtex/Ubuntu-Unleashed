@@ -761,7 +761,7 @@ with the name or IP address of the remote computer:
 
 `ssh 192.168.0.41`
 
-#### User Accounts
+### User Accounts
 
 To use super user privileges from the command line, you need to preface the command 
 you want to execute with another command, `sudo` (super user do), followed by a space and the command 
@@ -782,3 +782,17 @@ root prompt (#). Do what you need to do, and when you are finished type exit and
 Enter to return to your usual prompt.
 
 [sudo and root](https://help.ubuntu.com/community/RootSudo)
+
+### Reading Documentation
+
+#### Using Man Pages
+
+Man pages are stored in places like `/usr/share/man` and `/usr/local/share/man`, but
+you don't need to know that.
+
+Use the man command like this:
+
+`man rm`
+
+`info info`
+
