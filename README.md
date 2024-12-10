@@ -1142,3 +1142,80 @@ less filename
 
 `rm abc*`
 
+### Working as Root
+
+```
+sudo command with command line parameters
+```
+
+**Caution:** Before editing any important system or software service configuration file, make a backup copy.
+
+#### Understanding and Fixing `sudo`
+
+In order for a user to use `sudo`, the user account must belong to the *sudo* group and must also be listed in the `/etc/sudoers` file.
+
+##### Recovery Mode - Getting Root Access Again
+
+1. Hold the Shift key down while the computer is booting.
+
+2. When the GRUB menu page appears, use the arrow key on your keyboard to scroll to the
+entry that ends with (recovery mode) and press Enter to select it
+
+3. When the boot process finishes, and you have several options, select the menu entry for rot: Drop to Root Shell Prompt.
+
+4. Because Ubuntu mounts file systems as read-only by default in recovery mode, 
+you need to remout the root file system, /, as read/write so that you can fix the problem.
+
+```
+# mount -o rw,remount
+```
+
+if the problem exists because the user account was removed from the admin group, enter the following:
+
+```
+# aduser username admin
+```
+
+If the problem exists because the permissiosn for `/etc/sudoers` are wrong, enter this:
+
+```
+# chmod 440 /etc/sudoers
+```
+
+If the problem exists because of an internal problem in `/etc/sudoers`, make a backup of the existing file and use `visudo` to edit.
+
+After your fix is complete, enter the root command line:
+
+`# exit`
+
+#### Creating Users
+
+When a Linux system administrator creates a user, an entry is created in  `/etc/passwd` for the user. The system also creates a directory, labeled with the user's user name, in the `/home` directory.
+
+```
+sudo adduser sandra
+sudo passwd sandra
+```
+
+#### Deleting Users
+
+```
+sudo deluser --remove-all-files -remove-home sandra
+```
+
+#### Shutting Down the System
+
+```
+$ sudo shutdown -h now
+$ sudo shutdown -h 0
+$ sudo shutdown -h 18:30 "System is going down for maintenance this evening at 6:30 pm. Please make sure you have saved your work and logged out by then or you may lose data"
+```
+
+#### Rebooting the System
+
+```
+sudo shutdown -r now
+sudo shutdown -r 0
+```
+
+Other commands you can use to shut down and reboot Linux are the `halt` and `reboot` commands, but the `shutdown` command is more flexible.
