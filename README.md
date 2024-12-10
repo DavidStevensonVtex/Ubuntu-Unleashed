@@ -877,3 +877,268 @@ Recursively view directories and sub-directories
 #### Finding Your Current Directory with `pwd`
 
 `pwd`
+
+### Working with Permissions
+
+```
+$ touch file
+$ ls -l file
+-rw-rw-r-- 1 dstevenson dstevenson 0 Dec 10 12:12 file
+```
+
+* The type of file created
+* Permissions
+* Number of links to the file
+* The owner
+* The group
+* file size and creation/modification date
+
+#### Assigning Permissions
+
+In Linux, permissiosn are grouped by owner, group and others, with read, write, and execute permission assigned to each (rwx).
+
+* `r` indicates permission to open and read a file
+* `w` indicates permission to open and write to a file
+* `x` indicates permission to execute a file (or read a directory)
+
+Numeric codes:
+
+* 4 indicates read permission
+* 2 indicates write permission
+* 1 indicates execute permission
+
+Defined groups are maintained by the `root` operator , but you can use the `newgrp` command to temporarily join other groups to access files (as long as the root operator has added you to the other groups).
+
+You can also allo or deny other groups' access to your files by modifying the group permissions of your files.
+
+```
+$ groups
+dstevenson adm cdrom sudo dip plugdev lpadmin sambashare
+```
+
+```
+$ whoami
+dstevenson
+```
+
+#### Directory Permissions
+
+```
+$ mkdir directory
+$ ls -ld directory
+drwxrwxr-x 2 dstevenson dstevenson 4096 Dec 10 12:20 directory
+```
+
+If you examine a device file for a Linux serial port, you see the following:
+
+```
+$ ls -l /dev/ttyS0
+crw-rw---- 1 root dialout 4, 64 Dec 10 11:30 /dev/ttyS0
+```
+
+`c` designates a serial communications port.
+
+```
+$ ls -l /dev/sda
+brw-rw---- 1 root disk 8, 0 Dec 10 11:30 /dev/sda
+```
+
+`b` designates a block device.
+
+#### Altering File Permissiosn with `chmod`
+
+This command using various forms of command syntax, including octal or a mnemonic form (such as u, go, o, or a and rwx, and so on).
+* u - user
+* g - group
+* o - others
+* a - all
+* r - read permission
+* w - write permission
+* x - execute permission
+
+You can use the `chmod` command to add,remove or modify file or directory permissions.
+
+When you createa file, it uses the default permissions (set by `umask` in /etc/bashrc).
+
+Remove write permissions for everyone:
+
+```
+$ ll readme.txt
+-rw-rw-r-- 1 dstevenson dstevenson 0 Dec 10 12:29 readme.txt
+$ chmod a-w readme.txt
+$ ll readme.txt
+-r--r--r-- 1 dstevenson dstevenson 0 Dec 10 12:29 readme.txt
+```
+
+```
+$ ll readme.txt
+-r--r--r-- 1 dstevenson dstevenson 0 Dec 10 12:29 readme.txt
+$ chmod u+rw readme.txt
+$ ll readme.txt
+-rw-r--r-- 1 dstevenson dstevenson 0 Dec 10 12:29 readme.txt
+```
+
+#### File Permissiosn with `umask`
+
+The numbers we used above when discussing file permissions are also used with `umask`.
+
+Now, the numbers defined in `umask` are subtracted from the ultimate file permissions (777).
+
+If you wanted all new files created with a default permission of 777, you would type this.
+
+```$ umask 000```
+
+#### File Permissions with `chgrp`
+
+```chgrp wheel filename```
+
+#### Changing file Permissiosn with `chown`
+
+```chown dstevenson filename```
+
+You can also use the chown command to change the group of the file at the same time:
+
+```chown destevenson:wheel filename```
+
+#### Understanding Set User ID, Set Group ID, and Sticky Bit Permissions
+
+One commonly used program with suid (set user id) permissions is the passwd command:
+
+```
+$ ls -l /usr/bin/passwd
+-rwsr-xr-x 1 root root 68208 Feb  6  2024 /usr/bin/passwd
+```
+
+This setting allows normal users to execute thecommand (as root) to make changes to a root-only-accessible file (/etc/passwd).
+
+By defaul,t suid and sgid are turned off on files. To set them, add an extra digit to the beginning of a number in a `chmod` command. `Suid` uses `4`. `Sgid` uses `2`.
+
+```
+$ chmod 4711 filename
+```
+
+Savvy Linux system administrators keep the number suid or sgid files present on a system to a minimum.
+
+```
+sudo find / -type f -perm /6000 -exec ls -l {} \;
+```
+
+A sticky bit limits who many rename or delete files within a directory. 
+When it is set, files in that directory may be unlinked or renamed only 
+by a super user, the directory owner, or the file owner.
+
+```chmod 1755 directoryname```
+
+#### Setting Permissions with Access Control Lists
+
+```
+$ getfacl readme.txt
+# file: readme.txt
+# owner: dstevenson
+# group: dstevenson
+user::rw-
+group::r--
+other::r--
+```
+
+You can add multiple users and groups with permissions specific to each.
+
+```setfacl -m u:sanda:rwx readme.txt```
+
+Remove and reset `sandra`'s permissions on the file:
+
+```setfacl -r u:sandra: readme.txt```
+
+-m is for modify and -r is for remove.
+
+```
+setfacl -m g:groupname:rwx secrets.txt
+setfacl -m o:r secrets.txt
+```
+A useful feature is masking, which allows you to list only the permissions that are available:
+
+`setfacl -m m:rx readme.txt`
+
+### Working with Files
+
+#### Creating a File with `touch`
+
+```
+touch myfile
+touch randomdirectory/newfile
+touch /home/dstevenson/randomdirectory/newfile
+touch `/randomdirectory/newfile
+```
+
+#### Creating a Directory with `mkdir`
+
+```
+mkdir newdirectory
+mkdir music/newdirectory
+mkdir /home/destevenson/music/newdirectory
+mkdir ~/music/newdirectory
+
+# Create all subdirectories
+
+mkdir -p ~/music/newdirectory/subdir1/subdir2
+```
+
+#### Deleting a Directory with `rmdir`
+
+```
+rmdir directoryname
+rmdir music/directoryname
+rmdir /home/matthew/music/directoryname
+rmdir ~/music/directoryname
+```
+
+#### Deleting a File with `rm`
+
+```
+rm filename
+rm randomdirectory/filename
+rm /home/matthew/randomdirectory/filename
+rm ~/randomdirectory/filename
+
+# Delete a directory and all its contents
+rm -r /home/matthew/randomdirectory
+```
+
+#### Moving or Renaming a File with `mv`
+
+````
+mv documents/filename archive
+mv oldfilename newfilename
+mv documents/oldfilename archive/newfilename
+mv /home/matthew/documents/oldfilename /home/matthew/archive/newfilename
+mv ~/documents/oldfilename ~/archive/newfilename
+````
+
+#### Copying a File with `cp`
+
+```
+cp documents/filename archive
+cp oldfilename newfilename
+cp documents/oldfilename archive/newfilename
+cp /home/matthew/documents/oldfilename /home/matthew/archive/newfilename
+```
+
+#### Displaying the contents of a file with `cat`
+
+```
+cat filename
+```
+
+#### Displaying the contents of a File with `less`
+
+```
+less filename
+```
+
+`more` does not give the ability to scroll up and down
+
+
+#### Using Wildcards and Regular Expressions
+
+`rm abc*`
+
