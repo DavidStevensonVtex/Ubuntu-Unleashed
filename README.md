@@ -1219,3 +1219,20 @@ sudo shutdown -r 0
 ```
 
 Other commands you can use to shut down and reboot Linux are the `halt` and `reboot` commands, but the `shutdown` command is more flexible.
+
+### Commonly Used Commands and Programs
+
+* Managing users and groups - cvhage, chfn, chsh, edquota, gpasswd, groupadd, groupdel, groupmod, groups, mkpasswd, newgrp, newusers, passwd, umask, useradd, userdel, usermod
+* Managing files and file systems - cat, cd, chattr, chmod, chown, compress, cp, dd, fdisk, find, gzip, ln, mkdir, mksfs, mount, mv, rm, rmdir, rpm, sort, swapon, swapoff, tar, touch, umount, uncompress, uniq, unzip, zip
+* Managing running programs, bg, fg, kill, killall, nice, ps, pstree, renice, top, watch
+* Getting information - apropos, cal, cat, cmp, date, diff, df, dir, dmesg, du, env, file, free, grep, head, info, last, less, locate, ls, lsattr, man, more, pinfo, ps, pwd, stat, strings, tac, tail, top, uname, uptime, vdir, vmstat, w, wc, whatis, whereis, which, who, whoami
+* Console text editors, ed, jed, joe, mcedit, nano, red, sed, vim
+* Console, Internet and network commands - bing, elm, ftp, host, hostname, ifconfig, links, lynx, mail, mutt, ncftp, netconfig, netstat, pin, ping, pump, rdate, route, scp, sftp, ssh, tcpdump, traceroute, whois, wire-test
+
+See man page for more information.
+
+### References
+
+* [The Ubuntu community help page for using the terminal](https://help.ubuntu.com/community/UsingTheTerminal)
+* [Overview of the Linux file system tree](https://help.ubuntu.com/community/LinuxFilesystemTreeOverview)
+* [`sudo` - philosophy behind using it by default, and how to use it](https://help.ubuntu.com/community/RootSudo)
