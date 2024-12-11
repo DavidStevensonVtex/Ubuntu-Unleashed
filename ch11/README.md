@@ -252,3 +252,20 @@ The syntax is `ln [-s] something somewhere`:
 ```ln -s myfile.txt mylink```
 
 Symlinks are used extensively in Linux.  Programs that are superseded, such as `sh`, now point to their replacements (in this case `bash`), and library versioning is accomplished through symlinks.
+
+### Finding Files from an Index with `locate`
+
+Ubuntu ships with a `cron` job that creates an index of all files on your system every night.
+Searching this index is extremely fast.
+
+The `find` command searches recursively through each directory each time you request a file.
+
+```locate myfile.txt```
+
+Although Ubuntu rebuilds the filename index nightly, you can force a rebuild whenver you want
+ by running the command updatedb with sudo.
+
+ ```sudo updatedb```
+
+ 
+
