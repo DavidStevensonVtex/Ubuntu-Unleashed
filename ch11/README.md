@@ -165,3 +165,40 @@ find /home -not -perm +o=r
 ```
 find / -name "*.txt" -size +10k -user dstevenson -not -perm +o=r -exec chmod o+r {} \;
 ```
+
+### Searches for a String Input with `grep`
+
+```
+grep "some text" *
+
+# To enable recursive search in subdirectories, use the -r parameter
+grep -r "some text" *
+```
+`-l` forces grep to print the name of each file that contains at least one match without 
+printing the matching text.
+
+`-c` prints each file name that was searched and includes the number of matches at the end,
+even if there were no matches.
+
+You can invert the search by using the `-v` parameter.
+The following returns all the lines of the myfile.txt that do not contain the word *hello*.
+
+```grep -v "hello" myfile.txt```
+
+You can also use regular expressiosn to search for terms. This matches *cat*, *sat* or *mat*.
+
+```grep "[cms]at" myfile.txt```
+
+Adding the `-i` parameter removes case-insensitivity, match *Cat*, *CAT*, *MaT*, etc.
+
+```grep -i [cms]at myfile.txt```
+
+You can also control the output to some extent with the `-n` and `--color` parameters.
+`-n` tells grep to print the line number.
+The `--color` parameter tells grep to color the search terms in the output.
+
+```
+export GREP_COLOR=36 # cyan
+export GREP_COLOR=32 # lime green
+grep -in --color "[cms]at" myfile.txt
+```
