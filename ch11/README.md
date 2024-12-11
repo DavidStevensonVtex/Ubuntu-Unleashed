@@ -267,5 +267,31 @@ Although Ubuntu rebuilds the filename index nightly, you can force a rebuild whe
 
  ```sudo updatedb```
 
- 
+ ### Listing Files in the Current Directory with `ls`
 
+ ```
+ ls
+ ls *.txt
+ ls my*ls *.txt *.xml
+ ```
+
+Most popular parameters:
+
+* -a - includes hidden files
+* -b - uses human-readable sizes
+* -l - enables long listing
+* -r - reverse order
+* -R - recursively lists directories
+* -s - shows sizes
+* --sort - sorts the listing
+
+All files that start with a period are hidden in Linux.
+
+Read access for a directory enables users to see the directory contents.
+
+Ubuntu comes configured with a shortcut command for `ls -l`: `ll`.
+
+
+Sort options: extension, size, time. To flip the sorting order, use the `-r` parameter.
+
+```ls --sort size -r *.ogg```
