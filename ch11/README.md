@@ -61,3 +61,18 @@ and are covered later in this chapter.
 You can use cat to concatenate the output of more than one file.
 
 ```cat -s myfile.txt myotherfile.txt```
+
+### Changing Directories with `cd`
+
+The first part of cd's magin lies in the characters `-` and `~` (dash and tilde). 
+The minus sign says switch to my previous directory.
+The tilde means my home directory.
+
+```
+cd somedir
+cd /home/matthew/stuff/somedir
+cd /usr/local
+cd bin
+cd -
+cd ~
+```
