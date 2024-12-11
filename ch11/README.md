@@ -76,3 +76,24 @@ cd bin
 cd -
 cd ~
 ```
+
+### Changing File Access Permissions with `chmod`
+
+Your use of `chmod` can be greatly extended through one simple parameter: `-c`.
+This instructs `chmod` to print a list of all the changes it made as part of its operation,
+which means you can capture the output and use it for other purposes.
+
+```
+chmod -c 600 *
+mode of 'README.md' changed from 0664 (rw-rw-r--) to 0600 (rw-------)
+chmod -c 600 *
+```
+
+There are two other parameters of interest: `--reference` and `-R`.
+
+```
+# touch ~/myfile.txt
+ll ~/myfile.txt
+chmod --reference ~/myfile.txt *
+ll
+```
