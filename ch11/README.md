@@ -231,3 +231,24 @@ By default, `less` only searches within one file, but searching with all files c
 
 You can execute shell commands with the `!`, typing the command and pressing `Enter`.
 Type `exit` to return to less.  You can use `%` for the current file name. You can use `!!` to repeat the previous command.
+
+### Creating Links Between Files with `ln`
+
+`ln` allows you to make two types of links, hard links and symbolic links (symlinks).
+
+A hard link is an inode that allows two file names to point to the same file.
+
+A symlink. or soft link, is a re-direct to the real file.
+A symlink allows you to link to something that does not exist, or you can link to a directory.
+
+Creating a hard link is a way to back up a file. Removing one link allows the file to be accessed via the other link.
+
+Tip
+
+The `shred` command overwrites a file's contents with random data, allowing for safe deletion.
+
+The syntax is `ln [-s] something somewhere`:
+
+```ln -s myfile.txt mylink```
+
+Symlinks are used extensively in Linux.  Programs that are superseded, such as `sh`, now point to their replacements (in this case `bash`), and library versioning is accomplished through symlinks.
