@@ -111,3 +111,12 @@ du -abc ~
 du --exclude="*.xml" --exclude="*.xsl"
 du -X xml_exclude.txt
 ```
+
+### Using `echo`
+
+```
+echo 'I have the power!'
+echo $TERM
+echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
+sudo sh -c  'echo "1" > /proc/sys/location/of/setting'
+```
