@@ -51,3 +51,13 @@ Other commands:
 and are covered later in this chapter.
 
 `ssh` is covered in detail in Chapter 19 "Remote Access with SSH, Telnet and VNC".
+
+### Printing the Contents of a File with `cat`
+
+```cat myfile.txt```
+
+```$ cat -sn /proc/cpuinfo```
+
+You can use cat to concatenate the output of more than one file.
+
+```cat -s myfile.txt myotherfile.txt```
