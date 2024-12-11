@@ -120,3 +120,48 @@ echo $TERM
 echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
 sudo sh -c  'echo "1" > /proc/sys/location/of/setting'
 ```
+
+### Finding Files by Searching with `find`
+
+The `find` command uses X-style parameters, which merges UNIX standard and GNU standard by having words preceded by only one dash.
+
+```
+find -name "*.txt"
+find /home -name "*.txt"
+find /home -name "*.txt" -size 100k
+find /home -name "*.txt" -size +100k
+find /home -name "*.txt" -size -100k
+find /home -name "*.txt" -size -100k -user dstevenson
+find /home -name "*.txt" -size -100k -not -user dstevenson
+```
+
+You can use `-perm` to specify which permissiosn a file should have in order to match it.
+The permissiosn are specified int he same way as with the `chmod` command: 
+`u` for user, `g` for group, `o` for others, `r` for read, `w` for write, and `x` for execute.
+However, before you give the permissiosn, you need to specify a plus, a minus or a blank space.
+If you specify neither a plus or a minus, the files must exactly match the mode you give.
+
+```
+find /home -perm -o=r -exec ls -l {} \;
+find /home -perm -o=rw # does not match files that are o=r or o=w
+find /home -perm +o=rw # Matches r, w or rw for owner permissiosn
+
+find /home -perm -ugo=r # Matches files that are readable b y the user, the group and others.
+
+find /home -perm +ugo=r # Matches files if they are readable by the user, the group or others, or any combination of the three
+
+# If you are using neither + or -, you are specifying exact permissions to search for.
+
+find /home -perm ugo=r
+
+find /home -perm ugo=r,u=w
+
+# To find files that are not readable by others, use the -not condition, like this:
+find /home -not -perm +o=r
+```
+
+#### The `-exec` parameter
+
+```
+find / -name "*.txt" -size +10k -user dstevenson -not -perm +o=r -exec chmod o+r {} \;
+```
