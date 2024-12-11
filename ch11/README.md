@@ -103,3 +103,11 @@ ll
 Two marvelous parameters are `--parents` and `-u`.
 The first copies the full path of the file into the new directory; 
 the second copies only if the source file is newer than the destination.
+
+### Printing Disk Usage with `du`
+
+```
+du -abc ~
+du --exclude="*.xml" --exclude="*.xsl"
+du -X xml_exclude.txt
+```
