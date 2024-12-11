@@ -202,3 +202,32 @@ export GREP_COLOR=36 # cyan
 export GREP_COLOR=32 # lime green
 grep -in --color "[cms]at" myfile.txt
 ```
+
+### Paging Through Output with `less`
+
+Using `less /etc/passwd` enables you to use the cursor keys to scroll up and down the output freely. Type `q` to quit and return to the shell.
+
+* -M enables verbose prompting.
+* -N enables line numbering
+* + enables you to pass a command to `less` for it to execute as it starts
+
+The basic navigation keys are the up, down, left and right arrows; Home and End; and Page Up and Page Down.
+
+Beyond that is `/` which initiates a text search. `?` searches backwards for text.
+
+```less +/hello myfile.txt```
+
+```less +?hello myfile.txt```
+
+`50g` goes to the 50th line.
+
+Pressing `v` opens your file inside a text editor, which defaults to `vim`.
+
+```less -MN 1.txt 2.txt 3.txt```
+
+You can navigate between files by typing a colon and then pressing `n` to go to the next file or pressing `p` to go to the previous file.
+
+By default, `less` only searches within one file, but searching with all files can be done with `/*` or `?*`.
+
+You can execute shell commands with the `!`, typing the command and pressing `Enter`.
+Type `exit` to return to less.  You can use `%` for the current file name. You can use `!!` to repeat the previous command.
