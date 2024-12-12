@@ -267,7 +267,7 @@ Although Ubuntu rebuilds the filename index nightly, you can force a rebuild whe
 
  ```sudo updatedb```
 
- ### Listing Files in the Current Directory with `ls`
+### Listing Files in the Current Directory with `ls`
 
  ```
  ls
@@ -295,3 +295,81 @@ Ubuntu comes configured with a shortcut command for `ls -l`: `ll`.
 Sort options: extension, size, time. To flip the sorting order, use the `-r` parameter.
 
 ```ls --sort size -r *.ogg```
+
+### Listing System Information with `lsblk`, `lshw`, `lsmod`, `lspci` and `neofetch`
+
+To list storage, or *block# devices:
+
+`lsblk`
+
+<pre>
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0  12.2M  1 loop /snap/gnome-characters/69
+loop1    7:1    0   140M  1 loop /snap/gnome-3-26-1604/59
+loop2    7:2    0   1.6M  1 loop /snap/gnome-calculator/154
+loop3    7:3    0   3.3M  1 loop /snap/gnome-system-monitor/36
+loop4    7:4    0     4K  1 loop /snap/bare/5
+loop5    7:5    0    21M  1 loop /snap/gnome-logs/25
+loop6    7:6    0   516K  1 loop /snap/gnome-characters/797
+loop7    7:7    0  73.9M  1 loop /snap/core22/1722
+loop8    7:8    0 140.7M  1 loop /snap/gnome-3-26-1604/111
+loop9    7:9    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop10   7:10   0 505.1M  1 loop /snap/gnome-42-2204/176
+loop11   7:11   0 104.2M  1 loop /snap/core/17200
+loop12   7:12   0   2.2M  1 loop /snap/gnome-calculator/955
+loop13   7:13   0   1.6M  1 loop /snap/gnome-system-monitor/186
+loop14   7:14   0  44.3M  1 loop /snap/snapd/23258
+loop15   7:15   0   860K  1 loop /snap/gnome-logs/123
+sda      8:0    0 931.5G  0 disk 
+├─sda1   8:1    0   512M  0 part /boot/efi
+└─sda2   8:2    0   931G  0 part /
+sdb      8:16   0   1.8T  0 disk 
+├─sdb1   8:17   0   128M  0 part 
+├─sdb2   8:18   0 886.3G  0 part 
+└─sdb3   8:19   0 976.6G  0 part 
+sr0     11:0    1  1024M  0 rom  
+</pre>
+
+To list the hardware detected in your system:
+
+`sudo lshw`
+
+To list the status of modules in the Linux kernel:
+
+`lsmod`
+
+To list the PCI devices attached to your system, use the following:
+
+`lspci`
+
+<pre>
+00:00.0 Host bridge: Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+00:01.0 PCI bridge: Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+00:16.0 Communication controller: Intel Corporation 6 Series/C200 Series Chipset Family MEI Controller #1 (rev 04)
+00:1a.0 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2 (rev 05)
+00:1b.0 Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
+00:1c.0 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 1 (rev b5)
+00:1c.1 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 2 (rev b5)
+00:1c.2 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 3 (rev b5)
+00:1c.3 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 4 (rev b5)
+00:1c.4 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 5 (rev b5)
+00:1c.5 PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 6 (rev b5)
+00:1d.0 USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1 (rev 05)
+00:1f.0 ISA bridge: Intel Corporation H61 Express Chipset LPC Controller (rev 05)
+00:1f.2 SATA controller: Intel Corporation 6 Series/C200 Series Chipset Family 6 port Desktop SATA AHCI Controller (rev 05)
+00:1f.3 SMBus: Intel Corporation 6 Series/C200 Series Chipset Family SMBus Controller (rev 05)
+01:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Caicos [Radeon HD 6450/7450/8450 / R5 230 OEM]
+01:00.1 Audio device: Advanced Micro Devices, Inc. [AMD/ATI] Caicos HDMI Audio [Radeon HD 6450 / 7450/8450/8490 OEM / R5 230/235/235X OEM]
+05:00.0 Network controller: Ralink corp. RT5390 Wireless 802.11n 1T/1R PCIe
+06:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 06)
+</pre>
+
+For an interesting, high-level listing of system information, use this:
+
+Command 'neofetch' not found, but can be installed with:
+
+`sudo apt install neofetch`
+
+`neofetch`
+
+![images](neofetch.jpg)
