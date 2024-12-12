@@ -482,5 +482,8 @@ specifying the --pid parameter.
 
 Press `Ctrl-C` to terminate `tail` when using the `-f` mode.
 
+# Printing the Location of a Command with `which`
 
+`which mkdir`
+/bin/mkdir
 
