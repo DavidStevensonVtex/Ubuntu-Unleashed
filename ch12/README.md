@@ -133,3 +133,20 @@ Parameters for `jobs`:
 * -n - Displays information only about jobs that have changed status since the user was last notified of the status
 * -r - Restricts output to running jobs
 * -s - Restricts output to stopped jobs
+
+#### Running One or More Tasks in the Background
+
+`command &`
+
+A background process runs without any user input.
+
+You can input a list of serveral commands to run in the background.
+
+`a & b & c &`
+
+You can even use pipes within background processes, and you can combine multiples of each.
+
+`d & | e & f & g & | h &`
+
+Commands that are piped together are treated as one process.
+
