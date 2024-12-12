@@ -463,3 +463,24 @@ Sorting file numerically:
 Sort using column 5 numerically:
 
 `ls -la | sort -n -k5`
+
+### Printing the Last Lines of a File with `tail`
+
+If you want to watch a log file as it is written to, or if you want to monitor a 
+user's action as they are occurring, you need to be able to track log files as they change.
+
+This prints the last few lines of the log file.
+
+`tail /var/log/apache2/access.log`
+
+This command allows tail to display changes as they occur
+
+`tail -f /var/log/apache2/access.log`
+
+You can tie the life span of a `tail -f` command to the existence of a process by 
+specifying the --pid parameter.
+
+Press `Ctrl-C` to terminate `tail` when using the `-f` mode.
+
+
+
