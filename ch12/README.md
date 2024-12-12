@@ -40,3 +40,27 @@ If you want to suppress the output from a process, redirect to /dev/null.
 
 `verboseprocess > /dev/null`
 
+### `stdin`, `stdout`, `stderr` and Redirection
+
+```
+Standard input, 0
+Standard output, 1
+Standard error, 2
+```
+
+Redirecting to Standard Error
+
+`program 2> error.log`
+
+Redirect both stderr and stdout to a file:
+
+`program &> filename`
+
+Append both stderr and stdout to a file:
+
+`program >> filename 2>&1`
+
+to redirect standard error to standard out:
+
+`program 2>&1`
+
