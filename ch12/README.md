@@ -150,3 +150,31 @@ You can even use pipes within background processes, and you can combine multiple
 
 Commands that are piped together are treated as one process.
 
+#### Moving Jobs to the Background or Foreground with `bg` and `fg`
+
+*Foreground jobs* are process groups with control of the terminal.
+
+*Background jobs* are process groups without control of the terminal.
+
+`find ~ -type f -printf "%s\t%p\n" | sort -n`
+
+You can press `Ctrl+Z` to suspend the job and then you type tyis:
+
+`bg`
+
+That causes the process to resume but this time running in the background.
+
+Both `bg` and `fg`, if entered with no further arguments, operate on the job you have most recently connected with.
+
+Remember that the `jobs` command lists all current jobs and their status (running, stopped, and so on).
+
+Each job has a number. Use the job number to move a job to the foreground.
+
+`fg %2`
+
+If you want to move a specific job to the background, just add the job number the same way:
+
+`bg %2`
+
+If you want a job to continue after you exit, you should consider using a tool such as `byobu`, 
+or learn to run the process as a daemon.
