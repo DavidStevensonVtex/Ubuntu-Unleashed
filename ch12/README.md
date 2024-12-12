@@ -81,3 +81,17 @@ Command line options for diff:
 * -q or -brief - Outputs only whether the files differ
 * -l or --paginate - Passes the output through pr to paginate it
 
+#### Finding Similarities in Files with `comm`
+
+The comm command compares files line by line and outputs any lines that are identical.
+
+`comm file1 file2`
+
+This is a much more detailed comparison than with `diff``, and the output can be overwhelming.
+
+Some options when running `comm`:
+
+* -1 - supresses the output of column 1
+* -2 - supresses the output of column 2
+* -3 - supresses the output of column 3
+
