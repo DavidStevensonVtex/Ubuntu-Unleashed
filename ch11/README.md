@@ -497,3 +497,9 @@ You can use the `-m` or `--mirror` flag to do this.
 
 `wget http://youroldserver.com/website/files`
 
+### References
+
+* [The GNU project](http://www.gnu.org/)
+* *Linux in a Nutshell* by Stephen Figgins, Arnold Robbins, Ellen Siever, and Robert Love
+* [Linux Commands](http://www.linuxcommand.org/)
+* *The Art of UNIX Programming* by Eric Raymond
