@@ -409,3 +409,21 @@ ls is aliased to `ls --color=auto'
 Make audio and sound sub-directories using the `-p` command line option:
 
 `mkdir -p audio/sound`
+
+### Moving Files with `mv`
+
+Two helpful parameters:
+* `-f` - overwrites files without asking
+* `-u` - moves the source file only if it is newer than the destination file
+
+You can use absolute paths to indicate the destination directory (starting from /).
+
+`mv filename /newdirectory/newfilename`
+
+Renaming multiple files
+
+`rename 's/filename/newfilename'`
+
+The part in the single quotes is a Perl expression.
+
+`rename 's/\.htm/\.html/' *.htm`
