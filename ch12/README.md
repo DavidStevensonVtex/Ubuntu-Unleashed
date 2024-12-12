@@ -113,3 +113,23 @@ Parameter styles:
 * +sort or -sort - options: command, cpu, pid, user, etc.
 
 ps aux -sort=%cpu
+
+#### Listing Jobs with `jobs`
+
+If you are running an interactive program you can press `Ctrl-Z` to suspend it.
+Then you can start it back in the foreground using `fg`, or in the background using `bg`.
+
+You can also start a program running in the background by appending an & like this:
+
+`programname &`
+
+To list all the jobs you are running, you can use `jobs`:
+
+```jobs```
+
+Parameters for `jobs`:
+
+* -1 - Lists the process IDs along with the normal output
+* -n - Displays information only about jobs that have changed status since the user was last notified of the status
+* -r - Restricts output to running jobs
+* -s - Restricts output to stopped jobs
