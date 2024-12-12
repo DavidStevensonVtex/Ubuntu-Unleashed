@@ -373,3 +373,33 @@ Command 'neofetch' not found, but can be installed with:
 `neofetch`
 
 ![images](neofetch.jpg)
+
+### Reading Manual Pages with `man`
+
+The `whatis` command returns a one-line description of another command, which is the
+sametext you get at the top of that command's man page.
+
+``` 
+$ whatis ls
+ls (1)               - list directory contents
+```
+
+The `apropos` command takes a searchstring as its parameter and returns all man pages
+that match the search:
+
+```
+$ apropos mixer
+alsamixer (1)        - soundcard mixer for ALSA soundcard driver, with ncurses interface
+amixer (1)           - command-line mixer for ALSA soundcard driver
+```
+
+Many of the tips and tricks that work for `less` also work when viewing man pages.
+
+* `whereis` command - returns the location of `command`
+* `whatis` command - returns a one-line synopsis from *command*'s man page
+* `type` name - returns how a name would be interpreted if used as a command
+
+```
+$ type ls
+ls is aliased to `ls --color=auto'
+```
