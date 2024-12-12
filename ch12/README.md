@@ -226,3 +226,21 @@ and Real Time (1, highest priority).
 The -c flag designates class.
 
 `sudo ionice -c3 -p24351`
+
+### Combining Commands
+
+#### Pipes
+
+`ps aux | grep nethack`
+
+`ps aux | grep nethack | wc -l`
+
+`find / -name "*.txt" -size +10k -user dstevenson -not -perm +o=r -exec chmod o+r {} \;`
+
+`find / -name "*.txt" -size +10k -user dstevenson -not -perm +o=r | xargs chmod o+r`
+
+The xargs -i parameter allows you to specify exactly where the matching lines should be placed in your command.
+
+`find /home/dstevenson -size +10000k | xargs -i cp {} /home/dstevenson/archive`
+
+`dpkg --get-selections | grep gnome | sort`
