@@ -443,3 +443,23 @@ Fixing it, but too much typing!
 Better to add the following to your .bashrc file in your /home directory:
 
 `alias rm='rm --preserve-root'`
+
+### Sprtomg the Contents of a File with `sort`
+
+`sort testfile.txt`
+
+`sort -r testfile.txt`
+
+Sorting a number file alphabetically is probably incorrect.
+
+`sort numbefile.txt`
+
+Sorting file numerically:
+
+`sort -n numberfile.txt`
+
+`ls -la`
+
+Sort using column 5 numerically:
+
+`ls -la | sort -n -k5`
