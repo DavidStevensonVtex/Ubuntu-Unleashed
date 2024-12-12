@@ -484,6 +484,16 @@ Press `Ctrl-C` to terminate `tail` when using the `-f` mode.
 
 # Printing the Location of a Command with `which`
 
-`which mkdir`
+```$ which mkdir
 /bin/mkdir
+```
+
+### Downloading files with `wget`
+
+`wget http://releases.ubuntu.com/16.04/ubuntu-16.04-desktop-amd64.iso`
+
+Get a copy of all the content files from your existing web server .
+You can use the `-m` or `--mirror` flag to do this.
+
+`wget http://youroldserver.com/website/files`
 
