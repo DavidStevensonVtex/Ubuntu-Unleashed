@@ -64,3 +64,20 @@ to redirect standard error to standard out:
 
 `program 2>&1`
 
+### Comparing Files
+
+* what in the files are the same
+* what in the files are different
+
+#### Finding Differences in Files with `diff`
+
+`diff file1 file2`
+
+Command line options for diff:
+
+* -i or -ignore-case
+* -b or -ignore-space-change - Ignores changes in the amount of white space
+* -w or -ignore-all-space - Ignore all white space
+* -q or -brief - Outputs only whether the files differ
+* -l or --paginate - Passes the output through pr to paginate it
+
