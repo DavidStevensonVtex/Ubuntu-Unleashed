@@ -196,3 +196,33 @@ If you press B, text bolding is enabled.
 `r` enables you to renice - or adjust the niceness value.
 19 is the lowest and -19 is the highest. Anything less than 0 is 
 considered "high" and should be used sparingly.
+
+#### Setting Process Priority with `nice`
+
+You can set the priority for individual processes to tell the kernel to either limit or give extra priority to a specific process.
+
+ You can set the process priority when you first run a program by putting the command before whatevery you are going to run and assigning the process a value that designates its priority.
+
+ By default, all processes start with a priority of 0 (zero). Nice can be set for a maximum of -20, which is the highest priority, to a minimum of 19, the lowest priority.
+
+ `sudo nice -n 19 tar czf compressedfilename.tgz directoryname`
+
+ If a process is already running, you can reset the priority (some say "renice it") by using `renice`.
+ To adjust a specific process, first use `top` to learn the PID for the process and then use `-p PID`:
+
+ `sudo renice 19 -p 20136`
+
+ The renice command allows priority adjustments to be made on all processes owned by a specific user or group in the system.
+
+```
+sudo renice -20 -u mysql
+sudo renice -20 -g website
+```
+
+With the `ionice` command, you can adjust priority for disk access.
+There are only three class settings for priority: Idle(3, lowest), Effort(2, default),
+and Real Time (1, highest priority).
+
+The -c flag designates class.
+
+`sudo ionice -c3 -p24351`
