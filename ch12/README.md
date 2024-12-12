@@ -178,3 +178,21 @@ If you want to move a specific job to the background, just add the job number th
 
 If you want a job to continue after you exit, you should consider using a tool such as `byobu`, 
 or learn to run the process as a daemon.
+
+### Printing Resource Usage with `top`
+
+The default sort order in top shows the most CPU-intensive tasks first.
+
+Enter k to kill a process.
+
+Enter f to choose the fields to display.
+
+Fields Management for window 1:Def, whose current sort field is %CPU
+   Navigate with Up/Dn, Right selects for move then `<Enter>` or Left commits,
+   'd' or `<Space>` toggles display, 's' sets sort.  Use 'q' or `<Esc>` to end!
+
+If you press B, text bolding is enabled.
+
+`r` enables you to renice - or adjust the niceness value.
+19 is the lowest and -19 is the highest. Anything less than 0 is 
+considered "high" and should be used sparingly.
