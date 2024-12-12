@@ -95,3 +95,21 @@ Some options when running `comm`:
 * -2 - supresses the output of column 2
 * -3 - supresses the output of column 3
 
+### Limiting Resource Use and Job Control
+
+#### Listing Processes with `ps`
+
+Parameter styles:
+* UNIX style
+* GNU style
+* X style
+* BSD style uses single letters without dashes
+
+`ps` parameters
+* a - life the only yourself restriction
+* f
+* x
+* u
+* +sort or -sort - options: command, cpu, pid, user, etc.
+
+ps aux -sort=%cpu
