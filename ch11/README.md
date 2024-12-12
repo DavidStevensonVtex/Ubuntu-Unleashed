@@ -403,3 +403,9 @@ Many of the tips and tricks that work for `less` also work when viewing man page
 $ type ls
 ls is aliased to `ls --color=auto'
 ```
+
+### Making Directories with `mkdir`
+
+Make audio and sound sub-directories using the `-p` command line option:
+
+`mkdir -p audio/sound`
