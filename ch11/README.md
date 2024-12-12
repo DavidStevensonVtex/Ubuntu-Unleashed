@@ -427,3 +427,19 @@ Renaming multiple files
 The part in the single quotes is a Perl expression.
 
 `rename 's/\.htm/\.html/' *.htm`
+
+### Deleting Files and Directories with `rm`
+
+```rm -rf /home/matthew`
+
+Oops! The entire Linux file system is deleted, destroying the system!
+
+```rm -rf / home/matthew`
+
+Fixing it, but too much typing!
+
+`rm --preserve-root / home/matthew`
+
+Better to add the following to your .bashrc file in your /home directory:
+
+`alias rm='rm --preserve-root'`
