@@ -263,3 +263,25 @@ If you want to have a set of commands run in order but not use the output from o
 
 `$ doctor ; rose ; tardis`
 
+#### Process Substitution
+
+Sometimes the output of one or more commands is precisely what you want to use as the input to another command. You can use output redirection for this purpose, using what we call *process substitution*.
+In process substitution, you surround one or more commands with \( \) and precede each list with a \<.
+
+`$ cat < (ls -al)`
+
+Same as:
+
+`$ ls -al | cat`
+
+In the following example, you take the output of two `ls` commands as input to a `diff` command to compare the contents of the two directories:
+
+`$ diff < (ls firstdirectory) < (ls seconddirectory)`
+
+Faster than doing  the following and also no need to clean up temporary files:
+
+```
+$ ls firstdirectory > file1.txt
+$ ls secondirectory > file2.txt
+$ diff file1.txt file2.txt
+```
