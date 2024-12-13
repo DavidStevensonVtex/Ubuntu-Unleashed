@@ -479,3 +479,26 @@ To reconnect, run the command `screen -r` or `byobu -r`.
 
 * [byobu documentation](https://www.byobu.org/documentation)
 * [Ubuntu byobu community](https://help.ubuntu.com/community/Byobu)
+
+### Doing a Polite System Reset Using REISUB
+
+Before you can use the REISUB feature, it must be enabled. The feature is enable when the value of /proc/sys/kernal/sysrq is set to 1. You must have this enabled before you encounter a problem in order for REISUB to work.
+
+`cat /prod/sys/kernal/sysrq`
+
+to change the value, first edit the /etc/sysctl.conf file by uncommenting the line in the file by removing the # in front of it and saving to set kernel.sysrq=1. Then run the following:
+
+`sudo sysctl -p /etc/sysctl.conf`
+
+REISUB is an acronym used as a nmenonic device to help users to remember the Magic SysRq Key sequence that is best to use when trying to restart a frozen system without risking damage to the file system. The SysRq key is under the Print Screen key on my keyboard.
+
+You hold down SysRq+Alt and press the R, E, I, S, U, B keys one at a time, in order. Actions:
+
+1. unRaw - takes control of the keyboard back from the X server
+1. tEminate - Sends aSIGTERM command to all processes, which allows time for the processes to terminate gracefully
+1. kIll - Sends a SIGKILL to all processes, forcing any that are still running to terminate immediately.
+1. Sync - Flushese data from memory to disk
+1. Unmount - Unmounts and remounts all file systems as read-only
+1. reBoot - turns off and back on again, restarting the computer
+
+If you have to use REISUB, allow several seconds for each step. Be patient. Doing it this way can save you from the heartache of lost data.
