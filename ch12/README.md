@@ -333,3 +333,22 @@ Adding /sbin to your search path in ~/.bashrc:
 You can change to appearanche of you terminal prompt using the PS1 environment variable:
 
 `export PS1='$OSTYPE r001z -> '`
+
+### Using Common Text Editors
+
+Popular console-based text editors:
+
+* emacs
+* nano
+* vim
+
+Note that not all text editors are *screen oriented*, meaning designed for use from a terminal.
+
+* gedit
+* kate
+* kedit
+
+A good reason to learn how to use a text-based editor, such as `vi` or `nano`, is that system maintenance and recovery operations almost never take place during GUI sessions, negating the use of GUI editor.
+
+Another reason to learn how to use a text-based editor under the Linux console is so that you can edit text files through remote shell sessions because many servers do not host graphical desktops.
+
