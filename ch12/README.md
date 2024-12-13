@@ -517,3 +517,22 @@ Hold down the Shift key after the BIOS part is done to bring up the GRUB menu. I
 
 If GRUB is workign fine, skip to the "Using Recovery Mode" section.
 
+#### Reinstalling GRUB
+
+To restore GRUB, follow these steps:
+
+1. Boot Ubuntu from a live DVD or bootable USB drive that has the same Ubuntu release as your system.
+
+1. Determine the boot drive on your system:
+
+    a. open a terminal and use `sudo fdisk -l` to list the drives attached to your system.
+
+    b. Look for an entry with an * in the Boot column. This is your boot device. It will look something like /dev/sda1.
+
+1. Mount the Ubuntu partition at /mnt by using this command, replacing /dev/sda1 with the information you just found: `sudo mount /dev/sda /mnt`
+
+1. Reinstall GRUB with this command, again replacing /dev/sda1 with what you found earlier.
+
+    `sudo grub-install --boot-directory=/mnt/boo /dev/sda1`
+
+1. Restart the computer, and Ubuntu should boot properly.
