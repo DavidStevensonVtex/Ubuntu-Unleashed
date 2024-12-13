@@ -244,3 +244,16 @@ The xargs -i parameter allows you to specify exactly where the matching lines sh
 `find /home/dstevenson -size +10000k | xargs -i cp {} /home/dstevenson/archive`
 
 `dpkg --get-selections | grep gnome | sort`
+
+#### Combining Commands with Boolean Operators
+
+If you want to run a second command only if the first command is successfully completed, you can.
+
+Every command you issue to the system outputs an exit status: 0 for true (successfull) and 1 for false (failed).
+
+`$ i && k`
+
+You can do exactly the opposite with ||, which runs the following command only if the first one returns an exit status of 1 for false:
+
+`$ m || n`
+
