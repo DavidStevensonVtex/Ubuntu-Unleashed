@@ -398,3 +398,33 @@ If you start `emacs` using X11, the editor launches in its own floating window. 
 
 `$ emacs -nw file.txt`
 
+#### Working with `sed` and `awk`
+
+`sed`, which is short for *stream editor*, is a command that is used to perform transformations on text.
+
+It works from the command line and processes text via standard in and standard out. It does not modify the original input and does not save the output unles you redirect the output to a file. It is most useful this way or when piped between other commands.
+
+`awk` is a small programming languages for processing strings. It takes in text, transforms it in whatever way you tell it to, and then outputs the transformed text.
+
+`sed` and `awk` aren't used much anymore, at least not by people who have entered the profession in the twenty-first century, but they are beloved by those who take the time to learn them.
+
+```
+$ sed sedcommand inputfile
+$ sed -e sedcommand inputfile
+$ sed -e sedcommand -e anothersedcommand inputfile
+
+$ sed -e 's/camel/dune buggy/g' transportation.txt
+
+# you can use a regular expression in place of line numbers
+$ sed -e '4,17d' longtext.txt
+```
+
+You can use `sed` in scripts and chain commands together.
+
+The most common use of `awk` is to manipulate files that consist of fields separated by delimters, such as comma-separated values (CSV) file output from a spreadsheet program or a configuration file that assigns default values to program variables.
+
+You define the delimiter that `awk` will look for.
+
+`$awk -F',' '{ print $1, "was last picked up on ", $4 } deskstuff.txt`
+
+You can define multiple delimiters by using \[ \], like this: `-F'[;,-]'`.
