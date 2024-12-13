@@ -257,3 +257,9 @@ You can do exactly the opposite with ||, which runs the following command only i
 
 `$ m || n`
 
+#### Running Separate Commands in Sequence
+
+If you want to have a set of commands run in order but not use the output from one as the input to the next one, you can. Separating commands with a ; (semicolon)...
+
+`$ doctor ; rose ; tardis`
+
