@@ -502,3 +502,18 @@ You hold down SysRq+Alt and press the R, E, I, S, U, B keys one at a time, in or
 1. reBoot - turns off and back on again, restarting the computer
 
 If you have to use REISUB, allow several seconds for each step. Be patient. Doing it this way can save you from the heartache of lost data.
+
+### Fixing an Ubuntu System that Will Not Boot
+
+#### Checking BIOS
+
+It is possible that you accidentally reset the boot devices and/or order in your system BIOS. If making sure those settings are correct does not help, you may have a hardware problem.
+
+#### Checking GRUB
+
+If you are able to turn on the computer on and get past the initial BIOS startup, then you should consider whether you can access GRUB.
+
+Hold down the Shift key after the BIOS part is done to bring up the GRUB menu. If GRUB does not appear, then perhaps it has been overwritten, in which case the next section will help.
+
+If GRUB is workign fine, skip to the "Using Recovery Mode" section.
+
