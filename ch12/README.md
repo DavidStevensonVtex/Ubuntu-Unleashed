@@ -352,3 +352,19 @@ A good reason to learn how to use a text-based editor, such as `vi` or `nano`, i
 
 Another reason to learn how to use a text-based editor under the Linux console is so that you can edit text files through remote shell sessions because many servers do not host graphical desktops.
 
+`nano` and `vi` are almost universtally installed.
+
+#### Working with `nano`
+
+`nano` has the easiest learning curve.
+
+`$ nano file.txt`
+
+* Cursor movement - Arrow keys (left, down, up and right), Page Up and Page Down keys, `Ctrl+y` and `Ctrl+v` page up and down
+* Add characters - type at the cursor location
+* Delete character - backspace or Delete
+* Exit - `Ctrl+x`
+* Get Help - Ctrl+g
+
+
+
