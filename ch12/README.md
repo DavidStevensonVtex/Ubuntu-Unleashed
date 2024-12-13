@@ -366,5 +366,22 @@ Another reason to learn how to use a text-based editor under the Linux console i
 * Exit - `Ctrl+x`
 * Get Help - Ctrl+g
 
+#### Working with `vi`
 
+Chances are nearly 100% that `vi` will be available
 
+`$ vi file.txt`
+
+The `vi` command works by using an insert (or editing) mode and a viewing (or command) mode.
+
+* Cursor movement - h, j, k, l (left, down, up and right)
+* Delete character - x
+* Delete line - dd
+* Mode toggle - Esc, Insert (or i)
+* Quit - :q
+* Quit without saving :q!
+* Run a shell command - :sh (use 'exit' to return)
+* Save file - :w
+* Text search
+
+Use the `vimtutor` command to quickly learn how to use `vi`'s keyboard commands.
