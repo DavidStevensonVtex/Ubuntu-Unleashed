@@ -385,3 +385,16 @@ The `vi` command works by using an insert (or editing) mode and a viewing (or co
 * Text search
 
 Use the `vimtutor` command to quickly learn how to use `vi`'s keyboard commands.
+
+#### Working with `emacs`
+
+Richard M. Stallman's GNU `emacs` editor, like `vi` is available with Ubuntu and nearly every other Linux distribution.
+
+It's an editing environment, and you can use it to compile and build programs and act as an electronic diary, appointment book, and calendar.
+
+`$ emacs file.txt`
+
+If you start `emacs` using X11, the editor launches in its own floating window. To force `emacs` to display inside a terminal window instead of its own window, use the `-nw` command line option like this:
+
+`$ emacs -nw file.txt`
+
