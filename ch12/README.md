@@ -451,3 +451,31 @@ $ tar tzf archive | less
 To exapand the contents of a compressed archive, use `tar`'s zxf options, as follows:
 
 `$ tar zxf archive`
+
+### Using Multiple Terminals with `byobu`
+
+Many Linux veterans have enjoyed and use the GNU `screen` command, which was designed to enable you to use on terminal to control several terminal sessions easily.
+
+[GNU Screen](https://www.gnu.org/software/screen/)
+
+*Byobu* is a Japanese term for decorative, multipanel, vertically folding screens that are often used as room dividers.
+
+Like screen, byobu is a terminal multiplexer, which is a fancy term for a program that enables you to run multiple terminals inside one terminal.
+
+* F2 - Creates a new window
+* F3 - Goes to the previous window
+* F4 - Goes to the next window
+* F9 - Opens `byobu` menu for help and configuration
+
+To close a terminal within `byobu`, simply log out of it normally, using `exit` or `Ctrl+D`.
+When you exit the last terminal session that is open in `byobu`, the program closes as well
+and drops you to the regular terminal session you used to start `byobu`.
+
+However, there are two alternatives to quitting a `byobu` seession: locking and disconnecting.
+* locking - activated with F12
+* disconnecting - F6 - you can exit it and do other things for a while and then reconnect later
+
+To reconnect, run the command `screen -r` or `byobu -r`.
+
+* [byobu documentation](https://www.byobu.org/documentation)
+* [Ubuntu byobu community](https://help.ubuntu.com/community/Byobu)
