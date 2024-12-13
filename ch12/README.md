@@ -285,3 +285,9 @@ $ ls firstdirectory > file1.txt
 $ ls secondirectory > file2.txt
 $ diff file1.txt file2.txt
 ```
+
+### Executing Jobs in Parallel
+
+GNU parallel is a shell tool for executing jobs in parallel across multiple processors, cores, or even multiple connected computers.
+
+[GNU parallel](https://www.gnu.org/software/parallel/)
