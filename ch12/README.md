@@ -428,3 +428,26 @@ You define the delimiter that `awk` will look for.
 `$awk -F',' '{ print $1, "was last picked up on ", $4 } deskstuff.txt`
 
 You can define multiple delimiters by using \[ \], like this: `-F'[;,-]'`.
+
+### Working with Compressed Files
+
+* bunzip2 - Expands a compressed file
+* bzip2 - Compresses or expands files and directories
+* gunzip - Expands a compressed file
+* gzip - Compresses or expands file and directories
+* tar - Creates o, expands or lists the contents of compressed or uncompressed file or directory archives known as tape archives or tarballs
+
+To create a compressed archive of a directory, use `tar`'s `czf` options, like this:
+
+`$ tar czf compressedfilename.tgz directoryname`
+
+To list the contents of the compressed archive, substitute the `c` option with the letter `t`, like this:
+
+```
+$ tar tzf archive
+$ tar tzf archive | less
+```
+
+To exapand the contents of a compressed archive, use `tar`'s zxf options, as follows:
+
+`$ tar zxf archive`
