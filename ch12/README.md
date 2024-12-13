@@ -291,3 +291,45 @@ $ diff file1.txt file2.txt
 GNU parallel is a shell tool for executing jobs in parallel across multiple processors, cores, or even multiple connected computers.
 
 [GNU parallel](https://www.gnu.org/software/parallel/)
+
+### Using Environment Variables
+
+*Environment variables* are in-memory variables that are assigned and loaded by default when you login, or can be assigned by terminal commands.
+
+* `PWD`
+* `USER`
+* `LANG`
+* `SHELL` - name and location of the current shell, such as /bin/bash
+* `PATH`
+* `TERM`
+
+`echo $USER`
+
+You can use `env` to display all environment variables defined.
+
+```
+$ env | grep USER
+USERNAME=dstevenson
+USER=dstevenson
+```
+
+Default settings for bash are stored in /etc/profile and /etc/bashrc as well as .bashrc or .bash_profile in your /home directory.
+
+Commands are located by using the PATH environment variable, which is a colon separated list of directories to search for commands.
+
+`echo $PATH | tr ":" "\n"`
+
+```
+$ whereis ls
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
+/bin/ls
+```
+Adding /sbin to your search path in ~/.bashrc:
+
+`PATH=/sbin:$PATH`
+
+`source .bashrc # alternatively .bash_profile`
+
+You can change to appearanche of you terminal prompt using the PS1 environment variable:
+
+`export PS1='$OSTYPE r001z -> '`
