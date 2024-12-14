@@ -580,3 +580,11 @@ Use !* (exclamation point asterisk).
 $ ls stuff/article.txt
 $ nano !*
 ```
+
+#### Viewing Your History and More
+
+You can change the number of commands saved in your history be editing this line
+in the `.bashrc` file in your /home directory to whatever number you want:
+
+`HISTSIZE=1000`
+
