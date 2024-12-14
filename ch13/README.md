@@ -115,3 +115,9 @@ Examples:
 1. Make user `ryan` the group administrator with the `gpasswd` so that he can add new users to the group:
 
     `sudo gpasswd -A ryan`
+
+### Managing Users
+
+A user must be created, assigned a UID, provided a `/home` diretory, provided an initial set of files
+for his or her /home directory, and assigned to groups in order to use the system resources securely and
+efficiently.
