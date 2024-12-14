@@ -627,3 +627,10 @@ You can set up what is calleda `chroot` *jail*.
 
 `$ dmesg | grep nvidia`
 
+### References
+
+* [vim (vi clone) editor](http://www.vim.org/)
+* [FSF's GNU emacs editing environment](http://www.gnu.org/software/emacs/emacs.html)
+* [GNU nano editor environment](http://www.nano-editor.org/)
+* **sed & awk by Dale Dougherty and Arnold Robbins**
+* **The UNIX CD Bookshelf**
