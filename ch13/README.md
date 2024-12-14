@@ -51,3 +51,12 @@ system uses during day-to-day running of various services.
 
 for example, the user named `www-data` owns te Apache web server and all the associated files.
 
+#### User IDs and Group IDs
+
+The Ubuntu operating system identifies users and groups by numbers known as the *user ID (UID)* 
+and *group ID (GID).
+
+Numbers from 1 through 499 and number 65,534 are the system, sometimes called the logical users,
+or pseudo-users.
+
+Ubuntu creates a private GID for every UID of 1,000 and greater.
