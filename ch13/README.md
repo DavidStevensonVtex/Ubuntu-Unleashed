@@ -140,3 +140,8 @@ to lock a user out of his or her account, use the following command:
 `sudo useradd sandra -p c00kieZ4ME -u 1042`
 
 The system administrator can also use the graphical interface that Ubuntu provides to add the same account as shown in the prceding command but with fewer setting options available.
+
+#### Monitoring User Activity on the System
+
+* `w` tells the system administrator who is logged in (who also does this?)
+* `ac` provides information about the total connect time of the user, measured in hours
