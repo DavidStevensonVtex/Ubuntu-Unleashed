@@ -60,3 +60,13 @@ Numbers from 1 through 499 and number 65,534 are the system, sometimes called th
 or pseudo-users.
 
 Ubuntu creates a private GID for every UID of 1,000 and greater.
+
+#### File Permissions
+
+There are three types of permissions: read, write and execute (r, w, x). 
+For any file, permissions are assigned to three categories: user, group and other.
+
+* chgrp - Changes the group ownership of a file or directory
+* chown - Changes the owner of a file or diretory
+* chmod - Changes the access permissions of a file or directory
+
