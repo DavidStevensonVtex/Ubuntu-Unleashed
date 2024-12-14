@@ -77,3 +77,13 @@ Groups can make managing users a lot easier.
 Instead of having to assign individual permissiosn to every user, you can use groups to 
 grant or revoke permisssions to a large number of users quickly and easily.
 
+#### Group Listing
+
+`$ cat /etc/group`
+
+Finding your groups:
+
+```
+$ groups
+dstevenson adm cdrom sudo dip plugdev lpadmin sambashare
+```
