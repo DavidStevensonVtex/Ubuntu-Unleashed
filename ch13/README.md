@@ -134,3 +134,9 @@ efficiently.
 to lock a user out of his or her account, use the following command:
 
 `$sudo passwd -l username`
+
+#### Adding New Users
+
+`sudo useradd sandra -p c00kieZ4ME -u 1042`
+
+The system administrator can also use the graphical interface that Ubuntu provides to add the same account as shown in the prceding command but with fewer setting options available.
