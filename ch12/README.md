@@ -529,10 +529,19 @@ To restore GRUB, follow these steps:
 
     b. Look for an entry with an * in the Boot column. This is your boot device. It will look something like /dev/sda1.
 
-1. Mount the Ubuntu partition at /mnt by using this command, replacing /dev/sda1 with the information you just found: `sudo mount /dev/sda /mnt`
+1. Mount the Ubuntu partition at /mnt by using this command, replacing /dev/sda1 with the information you just found:
+
+    `sudo mount /dev/sda /mnt`
 
 1. Reinstall GRUB with this command, again replacing /dev/sda1 with what you found earlier.
 
     `sudo grub-install --boot-directory=/mnt/boo /dev/sda1`
 
 1. Restart the computer, and Ubuntu should boot properly.
+
+#### Using Recovery Mode
+
+Press Shift after the BIOS is done to access the GRUB menu. Select Advanced Options for Ubuntu.
+From the new menu, select an entry with the words *recovery mode*. This boots into a recovery menu with options to automatically fix several possible problems, or at least it lets you boot into a minimal recovery-mode version of Ubuntu with only the most necessary processes loaded.
+
+From here, you may be able to fix disks, check file systems, drop to a root prompt to fix file permissions, and so on.
