@@ -567,3 +567,8 @@ You can search your command history.
 
 Type `Ctrl+R` at the command line to start what is called a "reverse-i search" and begin typing.
 Whatever you type will be matched to previously run commands, so if you know it was a cool combination of commands piped together that had sort in the middle, start typing "sort" and watch as the displayed commands from your history appear.
+
+#### Running a Previous Command that Started with Specific Letters
+
+`!ls`
+
