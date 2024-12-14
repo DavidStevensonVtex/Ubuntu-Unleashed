@@ -600,3 +600,12 @@ Run the second command only if the first command fails:
 
 `$ command || command2`
 
+#### Using Shortcuts
+
+* Ctrl+U - Erases the entire line
+* Ctrl+W - Erases word by word
+* Left and right arrow keys - Move along the line to where the error is
+* Ctrl+A - Moves the cursor to the beginning of the line
+* Ctrl+E - Moves the cursor to the end of the line
+* Ctrl+K - Erases everything to the right of the cursor's positin
+
