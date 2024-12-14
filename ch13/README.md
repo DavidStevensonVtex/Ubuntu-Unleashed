@@ -70,3 +70,10 @@ For any file, permissions are assigned to three categories: user, group and othe
 * chown - Changes the owner of a file or diretory
 * chmod - Changes the access permissions of a file or directory
 
+### Managing Groups
+
+Groups can make managing users a lot easier.
+
+Instead of having to assign individual permissiosn to every user, you can use groups to 
+grant or revoke permisssions to a large number of users quickly and easily.
+
