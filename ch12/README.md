@@ -588,3 +588,15 @@ in the `.bashrc` file in your /home directory to whatever number you want:
 
 `HISTSIZE=1000`
 
+#### Doing Two or More Things
+
+`$ command1 ; command2`
+
+Run the second command only if the first command exited with no errors:
+
+`$ command1 && command2`
+
+Run the second command only if the first command fails:
+
+`$ command || command2`
+
