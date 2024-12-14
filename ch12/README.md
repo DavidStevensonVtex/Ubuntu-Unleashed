@@ -572,3 +572,11 @@ Whatever you type will be matched to previously run commands, so if you know it 
 
 `!ls`
 
+#### Running the Same Thing You Just Ran with a Different First Word
+
+Use !* (exclamation point asterisk).
+
+```
+$ ls stuff/article.txt
+$ nano !*
+```
