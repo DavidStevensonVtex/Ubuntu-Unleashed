@@ -87,3 +87,31 @@ Finding your groups:
 $ groups
 dstevenson adm cdrom sudo dip plugdev lpadmin sambashare
 ```
+
+#### Group Management Tools
+
+* groupadd - This command creates and adds a new group
+* groupdel - This command removes an existing group
+* groupmod - This command creates a group name or GIDs but doesn't add or delete members from a group.
+* gpasswd - This command creates a group password. Every group can have a group password and an administrator. Use the -A argument to assign a user as group administrator.
+* useradd -G - The -G argument adds a user to a group during the initial user creation. 
+* usermod -G - This command allows you to add a user to a group as long as the user is not logged in at the time.
+* grpck - This command checks the /etc/group file for typos
+
+Examples:
+
+1. Add a new group with the `groupadd` command:
+
+    `sudo group add dvdrw`
+
+1. Change the group ownership of the device to the new group with the `chgrp` command:
+
+    `sudo chgrp dvdrw /dev/scd0`
+
+1. Add the approved user to the group with the `usermod` command:
+
+    `sudo usermod -G dvdrw ryan`
+
+1. Make user `ryan` the group administrator with the `gpasswd` so that he can add new users to the group:
+
+    `sudo gpasswd -A ryan`
