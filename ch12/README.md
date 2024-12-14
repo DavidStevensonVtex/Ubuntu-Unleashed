@@ -607,5 +607,17 @@ Run the second command only if the first command fails:
 * Left and right arrow keys - Move along the line to where the error is
 * Ctrl+A - Moves the cursor to the beginning of the line
 * Ctrl+E - Moves the cursor to the end of the line
-* Ctrl+K - Erases everything to the right of the cursor's positin
+* Ctrl+K - Erases everything to the right of the cursor's position
+
+#### Confining a Script to a Directory
+
+You can set up what is calleda `chroot` *jail*.
+
+```chroot testing```
+
+`chroot testing`
+
+`$ ls /`
+
+#### [Using Coreutils](https://www.gnu.org/software/coreutils/)
 
