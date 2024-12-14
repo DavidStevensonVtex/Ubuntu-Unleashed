@@ -621,3 +621,9 @@ You can set up what is calleda `chroot` *jail*.
 
 #### [Using Coreutils](https://www.gnu.org/software/coreutils/)
 
+#### Reading the Contents of the Kernel Ring buffer with `dmesg`
+
+`$ dmesg`
+
+`$ dmesg | grep nvidia`
+
