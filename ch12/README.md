@@ -545,3 +545,7 @@ Press Shift after the BIOS is done to access the GRUB menu. Select Advanced Opti
 From the new menu, select an entry with the words *recovery mode*. This boots into a recovery menu with options to automatically fix several possible problems, or at least it lets you boot into a minimal recovery-mode version of Ubuntu with only the most necessary processes loaded.
 
 From here, you may be able to fix disks, check file systems, drop to a root prompt to fix file permissions, and so on.
+
+#### Reinstalling Ubuntu
+
+If you are able to boot using a live DVD or bootable USB drive using the same Ubuntu release or one just newer than the one on the hard drive, and if there are no hardware problems with your system, you can usually recover all your files by reinstalling Ubuntu.
