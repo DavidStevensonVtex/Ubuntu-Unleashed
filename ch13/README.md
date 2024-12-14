@@ -121,3 +121,16 @@ Examples:
 A user must be created, assigned a UID, provided a `/home` diretory, provided an initial set of files
 for his or her /home directory, and assigned to groups in order to use the system resources securely and
 efficiently.
+
+#### User Management Tools
+
+* useradd - This command adds a new user account to the system.
+* useradd -D This command sets the system defaults for creating the user's `/home` directory, account expiration date, default group, and command shell. See the specific options in the `useradd` man page. Used without any arguments, the `useradd` command displays the defaults for the system. The default files are in /etc/skel.
+* deluser - This command removes a user's account (thereby eliminating that user's home directory and all files it contains). There is an older version of this command, `userdel`. `deluser` is preferred because it provides finer control over what is deleted.
+* passwd - This command updates the authentication tokens used by the password management system.
+* usermod - This command changes several user attributes. The most commonly used arguments are `-s` to change the shell and `-u` to change the UID. No changes can be made while the user is logged in or running a process.
+* csh - This command changes the user's default shell. For Ubuntu, the default shell is /bin/bash, known as the Bash, or Bourne Again Shell.
+
+to lock a user out of his or her account, use the following command:
+
+`$sudo passwd -l username`
