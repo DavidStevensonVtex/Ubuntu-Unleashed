@@ -549,3 +549,21 @@ From here, you may be able to fix disks, check file systems, drop to a root prom
 #### Reinstalling Ubuntu
 
 If you are able to boot using a live DVD or bootable USB drive using the same Ubuntu release or one just newer than the one on the hard drive, and if there are no hardware problems with your system, you can usually recover all your files by reinstalling Ubuntu.
+
+### Tips and Tricks
+
+#### Running the Previous Command
+
+You can rerun the previous command with the up arrow and Enter, You can also rerun it with !! (referred to as "bang bang").
+
+```
+apt-get update
+sudo !!
+```
+
+#### Running Any Previous Command
+
+You can search your command history.
+
+Type `Ctrl+R` at the command line to start what is called a "reverse-i search" and begin typing.
+Whatever you type will be matched to previously run commands, so if you know it was a cool combination of commands piped together that had sort in the middle, start typing "sort" and watch as the displayed commands from your history appear.
