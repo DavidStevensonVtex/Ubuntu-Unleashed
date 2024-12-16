@@ -173,3 +173,36 @@ Several services run as pseudo-users, usually with root permissions. Typically t
 
 `egrep "nologin|false" /etc/passwd`
 
+#### Shadow Passwords
+
+It is considered a security risk to keep passwords in `/etc/passwd` because people could run a password cracking program. To avoid this risk, *shadow passwords* are used and stored in the `/etc/shadow` file.
+
+Special versiosn of the traditional `password` and `login` programs must be used to enable shadow passwords.
+
+`sudo cat /etc/shadow`
+
+The fields are separated by colons:
+
+* user's login name
+* user's encrypted password for the user
+* day on which the last password change occurred.
+* The number of days before the password can be changed (which prevents changing a password and then back to the old password)
+* The number of days after which the password must be changed.
+* The number of days before the password expiration.
+* The number of days after the password expires that the account is disabled.
+* The number of days since January 1, 1970, that the account has been disabled.
+* A reserved field that is not currently allocated to any use.
+
+Note that password expiration dates and warnigns are disabled by default in Ubuntu.
+
+PAM - Pluggable Authentication Modules
+
+4 Management Groups:
+
+* account management, 
+* authentication management
+* password management
+* session management
+
+Configuration files are in `/etc/pam.d`.
+
