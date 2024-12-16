@@ -287,3 +287,29 @@ You must edit the `/etc/sudoers` file using `visudo`:
 If you want to give every user permission with no password requied to mount-the CD driveon the localhos, you do so as follows:
 
 ALL localhos=NOPASSWD:/sbin/mount /dev/scd0 /mnt/cdrom /sbin/umount /mnt/cdrom
+
+### Disk Quotas
+
+When a file is created, both a user and a group own it. Ownership of files is always part of the metadata about the files. This makes quotas based on both users and groups easy to manage.
+
+
+Note: Disk quota management is not really useful or needed on a home system and rarely, if ever, on a small office system.
+
+To manage disk quotas, you must have the `quota` and `quotatool` packages instaleld on your system. Quota management with Ubuntu is not enabled by default and has been traditionall been enabled and configured manually by system administrators.
+
+Quota commands
+
+* `quotacheck` to initialize the quota database files
+* `edquota` to set and edit user quotas
+* `setquota` to configure disk quotas
+*  `warnquota` for automatically sending mail to users over their disk space usage limit
+
+#### Implementing Quotas
+
+The underlying console tools (which have man pages):
+
+* quotaon and quotaoff - toggle quotas on a partition
+* repquota - provides summary status report on users and groups
+* quotacheck - Updates the status of quotas
+* edquota - enables basic quota management
+
