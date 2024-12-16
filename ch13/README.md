@@ -208,4 +208,16 @@ Configuration files are in `/etc/pam.d`.
 
 #### Managing Password Security for Users
 
+#### Changing Passwords in a Batch
+
+The super user can change passwords in a batch by using the `chpasswd` command,
+which accepts input as a name/password pair per line in the following form:
+
+`sud chpasswd username:password`
+
+Passwords can be changed *en masse` * by redirecting a list of name and password pairs to the command.
+
+Ubuntu also provides the `newusers` command to add users in a batch from a text file. 
+This command also allows a user to be added to a group, and a new directory can be added for the user too.
+
 
