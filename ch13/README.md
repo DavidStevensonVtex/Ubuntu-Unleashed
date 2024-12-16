@@ -313,3 +313,9 @@ The underlying console tools (which have man pages):
 * quotacheck - Updates the status of quotas
 * edquota - enables basic quota management
 
+### Manually Configuring Quotas
+
+Manual configuration of quotas involves changing entries in your system's file system table, `/etc/fstab` to add the `usrquota` mount option to the desired portion of your file system.
+
+Ubuntu does not support any graphical tools that enable you to configure disk quotas.
+A Quota mini-HOWTO is maintained at [link](http://www.tldp.org/HOWTO/Quota.html).
