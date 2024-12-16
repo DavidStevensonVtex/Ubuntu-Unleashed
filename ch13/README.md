@@ -264,3 +264,26 @@ root~#
 # To return to the regular user's identity:
 exit
 ```
+
+#### Granting Root Privileges on Occasion: The `sudo` command
+
+The problem is that UNIX permissiosn come with all or nothing authority.
+
+Enter `sudo`, an application that permits the assignment of one, several,
+or all the root-only system commands.
+
+After it is configured, using `sudo` is simple.
+
+`$ sudo command`
+
+When the command is entered, `sudo` checks the `/etc/sudoers` file to see whether the user is authorzied to wield super user privileges; if so, sudo use is authorized for a specific amount of time.
+
+The time allotted is 15 minutes by default in Ubuntu.
+
+You must edit the `/etc/sudoers` file using `visudo`:
+
+`$ sudo visudo`
+
+If you want to give every user permission with no password requied to mount-the CD driveon the localhos, you do so as follows:
+
+ALL localhos=NOPASSWD:/sbin/mount /dev/scd0 /mnt/cdrom /sbin/umount /mnt/cdrom
