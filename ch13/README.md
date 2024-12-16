@@ -338,3 +338,11 @@ A Quota mini-HOWTO is maintained at [link](http://www.tldp.org/HOWTO/Quota.html)
 * sudo - manages selected user execution permissions
 * useradd - creates, modifies or manages users
 * usermod - edits a user's login profile
+
+### References
+
+* [HOWTO user and group information](http://tldp.org/HOWTO/User-Authentication-HOWTO/)
+* [HOWTO Shadow Passwords](http://tldp.org/HOWTO/Shadow-Password-HOWTO.html)
+* [Overview of Security Issues, including creating accounts, file permissions, and password security](http://tldp.org/HOWTO/Security-HOWTO/)
+* [Linux System Administrator's Security Guide](http://tldp.org/LDP/sag/html/index.html)
+* [Pluggable Authentication Modules suite](http://www.kernel.org/pub/linux/libs/pam)
