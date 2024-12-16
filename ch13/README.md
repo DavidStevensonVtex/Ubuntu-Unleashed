@@ -220,4 +220,47 @@ Passwords can be changed *en masse` * by redirecting a list of name and password
 Ubuntu also provides the `newusers` command to add users in a batch from a text file. 
 This command also allows a user to be added to a group, and a new directory can be added for the user too.
 
+### Granting System Administrator Privileges to Regular Users
 
+#### Temporarily Changing User Identity with the `su` Command
+
+The first scenario requires the existence of a root account, which is not enabled by default on Ubuntu systems and is not generally recommended in the Ubuntu community. However, there are times when this makes sense.
+
+Note: A popular misconception is that the *su* command is short for super user; it really just means *substitute user*.
+
+To enable the root account, you must enter the command `sudo passwd` at the command line and enter your password and a new root password. After this has been completed, you can `su` to root. 
+
+We suggest you read the information at this [link](https://help.ubuntu.com/community/RootSudo) before doing so to ensure that you understand the reason the root account is not enabled by default.
+
+Because almost all Linux file system security resolves around file permissions, it can be useful to occasionally become a different user with permission to access files belong to other users or groups or to acces special files (such as the communications port /dev/ttyS0...)
+
+The syntax for *su* is:
+
+`su option username arguments`
+
+* -c, --command - pass a single command to the shell
+* -m --preserve-environment - do not reset the environment variables
+* -l - a fll login siulation for the substituted user, the same as specifying the dash alone
+
+By using `su` alone, you can become root, but you keep your regular user environment.
+This can be verified by using `printenv` command before and after the change.
+
+by executing the following, you become root and inherit root's environment:
+
+`$ su -`
+
+By executing the following, you become that user and inherit the super user's environment.
+Inheriting the environment comes from using the dash in the command.
+
+`$ su - other_user`
+
+When leaving an identity to return to your usual user identity, use the `exit` command.
+
+```
+$ su - root
+Password:
+root~#
+
+# To return to the regular user's identity:
+exit
+```
