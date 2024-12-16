@@ -154,3 +154,22 @@ The system administrator can also use the graphical interface that Ubuntu provid
 * Frequency of mandated password changes
 * Retrieval or replacement of lost or forgotten passwords
 * Password handling by users
+
+#### The Password File 
+
+The password file is `/etc/passwd`. The format for each line is:
+
+```username:password:uid:gid:gecos:homedir:shell```
+
+The gecos field is for miscellaneous information about the user, including their full name, office location, office and home phone number, and possibly a brief text note.
+
+Note that colons separate all fields in the `/etc/passwd` file.
+
+If an asterisk appears in the password field, the user is not allowed to log in. This feature exists so that a user can be easily disabled and (possibly) reinstated later without the need to create the user all over again.
+
+The system administrator can either edit the file directly or use the `passwd -l` command.
+
+Several services run as pseudo-users, usually with root permissions. Typically they are assigned a shell value of `/sbin/nologin` or `/bin/false`.
+
+`egrep "nologin|false" /etc/passwd`
+
