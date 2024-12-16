@@ -319,3 +319,22 @@ Manual configuration of quotas involves changing entries in your system's file s
 
 Ubuntu does not support any graphical tools that enable you to configure disk quotas.
 A Quota mini-HOWTO is maintained at [link](http://www.tldp.org/HOWTO/Quota.html).
+
+### Related Ubuntu Commands
+
+* ac - provides user account statistics
+* change - sets or modifies user password expiration policies
+* chfn - creates or modifies user `finger` information in `/etc/passwd`
+* chgrp - modifies group memberships
+* chmod - changes file permissions
+* chown - changes file ownerships
+* chpasswd - modifies user passwords in batches
+* chsh - modifies a user's shell
+* groups - displays existing group memberships
+* lognames - displays a user's login name
+* newusers - batchesuser management command
+* passwd - creates or modifies user passwords
+* su - executes a shell or command as another user
+* sudo - manages selected user execution permissions
+* useradd - creates, modifies or manages users
+* usermod - edits a user's login profile
