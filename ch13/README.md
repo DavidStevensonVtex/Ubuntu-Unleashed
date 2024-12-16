@@ -145,3 +145,12 @@ The system administrator can also use the graphical interface that Ubuntu provid
 
 * `w` tells the system administrator who is logged in (who also does this?)
 * `ac` provides information about the total connect time of the user, measured in hours
+
+### Managing Passwords
+
+#### System Password Policy
+
+* Allowed and forbidden passwords
+* Frequency of mandated password changes
+* Retrieval or replacement of lost or forgotten passwords
+* Password handling by users
