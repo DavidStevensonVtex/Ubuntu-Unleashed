@@ -212,3 +212,16 @@ Kill a process
 
 ### Writing and Executing a Shell Script
 
+#### Running the New Shell Program
+
+`./myenv.sh`
+
+`ksh myenv.sh`
+
+```
+mkdir bin
+mv myenv.sh bin
+myenv.sh
+```
+
+`env | fgrep PATH
