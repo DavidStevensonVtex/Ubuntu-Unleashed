@@ -109,3 +109,13 @@ Five types of suspend:
 * no - The computer is not suspended immediately. Only wakeu time is set. This allows yo to continue working; you have to remember to put the computer to sleep manually.
 * off - The computer is turned off completely. Wake will not work with this setting.
 * standby - The computer is put into standby mode, which saves some power over running normally but not nearly as much as the other options.
+
+### Basic Shell Control
+
+* bash - Bourne Again Shell, /bin/bash
+* ksh - Korn Shell, /bin/ksh, /usr/bin/ksh
+* pdksh - A symbolic link to ksh, /usr/bin/pdksh
+* rsh - restricted shell (for network operation), /usr/bin/rsh
+* sh - A symbolic link to bash, /bin/sh
+* tcsh - A csh-compatible shell, /bin/tcsh
+* zsh - A shell compatible with csh, ksh, and sh, /bin/zsh
