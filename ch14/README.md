@@ -93,3 +93,19 @@ If you are not allowed to schedule jobs, you will be stopped from editing your c
 You can use the command `crontab -l` to list your jobs.
 
 Use `crontab -e` to edit your crontab file. Ifyou want to delete all your jobs, you can use `crontab -r` to delete your `crontab` file.
+
+#### Using `rtcwake` to Wake Your Computuer from Sleep Automatically
+
+Wake your computer every hour.
+
+`sudo rtcwake -m mem -s -3600`
+
+`sudo rtcwake -m [type of suspend] -s [number of seconds]`
+
+Five types of suspend:
+
+* disk - (hibernate) The current state of the computer is written to disk, and the computer is powered off.
+* mem - (sleep) The current state of the computer is written to RAME and the computer is put into a low-power state.
+* no - The computer is not suspended immediately. Only wakeu time is set. This allows yo to continue working; you have to remember to put the computer to sleep manually.
+* off - The computer is turned off completely. Wake will not work with this setting.
+* standby - The computer is put into standby mode, which saves some power over running normally but not nearly as much as the other options.
