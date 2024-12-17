@@ -191,3 +191,21 @@ DONE
 find /d2 -name '*.txt' -print | xargs cat | \
 tr ' ' '\n' | sort | uniq > output.txt
 ```
+
+#### Background Procesing
+
+the shell alows you to start a command and then launch it into the background as a process by using an ampersand (\&) at the end of a command line.
+
+`xterm &`
+
+The numbers echoed back show a number, which is a job number or a reference number for a shell process, and a process ID number or PID.
+
+Kill a job:
+
+`kill %3`
+
+Kill a process
+
+`kill 1437`
+
+`tar -czf /backup/home.tgz /home &`
