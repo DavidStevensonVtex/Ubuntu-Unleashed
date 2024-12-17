@@ -224,4 +224,10 @@ mv myenv.sh bin
 myenv.sh
 ```
 
-`env | fgrep PATH
+`env | fgrep PATH`
+
+`echo $PATH | tr ':' '\n'`
+
+#### Storing Shell Scripts for System-wide Access
+
+You can put new commands in `/etc/bashrc`. 
