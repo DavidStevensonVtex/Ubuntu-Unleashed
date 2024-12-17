@@ -155,3 +155,32 @@ may be strung out."
 *   \\x - matches or escapes a character such as ? or a tab character
 
     `touch foo\?`
+
+#### Redirecting Input and Output
+
+Special characters: \>, \<, or \>\>
+
+`ls *.txt > textfiles.listing`
+
+Use output rediretion with care because it is possible to overwrite existing files.
+
+The shell can warn when attempting to redirect to a directory.
+
+```
+mkdir foo
+ls > foo
+```
+
+Appending:
+
+`ls *.text >> textfiles.listing`
+
+Reading from standard input:
+
+`cat < textfiles.listing`
+
+You can use the shell *here* operator, \<\<, to specify the end of input on the shell command line:
+
+cat \> simple_script  \<\< DONE
+echo ""This is a simple script""
+DONE
