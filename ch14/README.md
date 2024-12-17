@@ -61,3 +61,35 @@ The default configuration for `at` and `batch` is to allow everyone to use it, w
 
 The `at.allow` file does not exist by default. If you have a blank `at.allow` file, no one except root is allowed to schedule jobs.
 
+#### Using `cron` to Run Jobs Repeatedly
+
+The `at` and `batch` commands work well if you just want to execute a single task at a later date, but thye are less useful if you want to run a task frequently.
+
+Users listed in the cron.deny file are not allowed to use `cron`, and users listed in the `cron.allow` file are.
+
+An empty `cron.deny` file -- the default -- means everyone can set jobs.
+An empty `cron.allow` file means that no one (except root) can set jobs.
+
+Two types of jobs:
+* system jobs
+* user jobs
+
+Only root can edit *system* jobs, whereas any user whose name appears in a `cron.allow` or does not appear in `cron.deny` can run *user* jobs.
+
+System jobs are controlled through the `/etc/crontab` file.
+
+The `cron` daemon reads all the system crontab files and all the user crontab files once a minute to check for changes. However, any new jobs it finds will not be executed until at least 1 minute has passed.
+
+You can also specify day and month names rather than numbers, using three-character abbreviations: Sun, Mon, Tue, Fri, Sat for days, Jan, Feb, Mar, Oct, Nov, Dec for months.
+
+User jobs are stored in the /var/spool/cron diretory, which each user having his own file named after his username.
+
+To edit your own `crontab` file, type `crontab -e`. This brings up a text editor, where you can enter your entries. By default the editor is vim, also known as vi.
+
+When programming, we tend to use a `sandbox` subdiretory in our home diretory where we keep all sorts of temporary files that we were just playing around with.
+
+If you are not allowed to schedule jobs, you will be stopped from editing your crontab file.
+
+You can use the command `crontab -l` to list your jobs.
+
+Use `crontab -e` to edit your crontab file. Ifyou want to delete all your jobs, you can use `crontab -r` to delete your `crontab` file.
