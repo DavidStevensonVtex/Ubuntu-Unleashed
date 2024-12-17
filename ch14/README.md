@@ -119,3 +119,22 @@ Five types of suspend:
 * sh - A symbolic link to bash, /bin/sh
 * tcsh - A csh-compatible shell, /bin/tcsh
 * zsh - A shell compatible with csh, ksh, and sh, /bin/zsh
+
+#### The Shell Command Line
+
+* Searching files or directories
+* Gettign data from and sending data to a file or command, input and output redirection.
+* Feeding or filtering a program's output to another command (called using *pipes*)
+* job control commands
+
+`w; free; df`
+
+Using the backslash as a line continuation
+```
+echo "this is a long \
+command line and" ; echo "shows that multiple commands \
+may be strung out."
+```
+
+*Mastering Regular Expressions* by Jeffrey E. F. Friedl
+
