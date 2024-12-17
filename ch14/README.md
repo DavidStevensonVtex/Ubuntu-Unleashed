@@ -138,3 +138,20 @@ may be strung out."
 
 *Mastering Regular Expressions* by Jeffrey E. F. Friedl
 
+#### Shell Pattern-Matching Support
+
+* \* - matches any character.
+
+    `ls *.txt`
+
+* \? - matches a single character.
+
+    `ls *.d?c`
+
+* \[xxx\] - Matches a range of characters
+
+    `ls *[0-9]*`
+
+*   \\x - matches or escapes a character such as ? or a tab character
+
+    `touch foo\?`
