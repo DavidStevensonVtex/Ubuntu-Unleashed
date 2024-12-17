@@ -184,3 +184,10 @@ You can use the shell *here* operator, \<\<, to specify the end of input on the 
 cat \> simple_script  \<\< DONE
 echo ""This is a simple script""
 DONE
+
+#### Piping Data
+
+```
+find /d2 -name '*.txt' -print | xargs cat | \
+tr ' ' '\n' | sort | uniq > output.txt
+```
