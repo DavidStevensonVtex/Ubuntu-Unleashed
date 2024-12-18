@@ -301,6 +301,9 @@ fi
 # Your name is Sandra
 ```
 
-# Using Positional Parameters to Access and Retrieve Variables from the Command Line
+#### Using Positional Parameters to Access and Retrieve Variables from the Command Line
 
 Shell scripts that contain positional parameters are often used for automating routing and mundane jobs.
+
+#### Using a Simple Script to Automate Tasks
+
