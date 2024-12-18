@@ -369,3 +369,13 @@ newvar='Value of var is $var'
 echo $newvar
 # Output: Value of var is $var
 ```
+
+##### Using the Backslash as an Escape Character
+
+```
+test="abc def"
+var=\$test
+echo $var
+# Output: $test
+```
+
