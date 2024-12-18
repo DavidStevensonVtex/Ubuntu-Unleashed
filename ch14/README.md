@@ -357,4 +357,15 @@ echo $newvar
 # Output: Value of var is test string
 ```
 
+##### Using Single Quotes to Maintain Unexpanded Variables
 
+You can surround a string with single quotes (') to stop the shell from expanding variables and interpreting special characters.
+
+When used for the latter purpose, the single quote is an *escape character*, similar to the backslash.
+
+```
+var='test string'
+newvar='Value of var is $var'
+echo $newvar
+# Output: Value of var is $var
+```
