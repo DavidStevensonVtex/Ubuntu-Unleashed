@@ -421,3 +421,23 @@ or
 * `-w` - Determines whether write permission is set for a file
 * `-x` - Determines whether execute permission is set for a file
 
+#### The `for` Statement
+
+```
+for curvar in list
+do
+    statements
+done
+
+# statements are executed once for each of the positional parameters passed to the shell program.
+for curvar
+do
+    statements
+done
+
+# You can also write this format as follows:
+for curvar in $
+do
+    statements
+done
+```
