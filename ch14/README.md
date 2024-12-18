@@ -389,3 +389,15 @@ var=`wc -w test.txt`
 echo "$var words"
 # Output: 5 test.txt words
 ```
+
+#### Comparison of Expressions in `pdksh` and `bash`
+
+`test expression` 
+or
+`[ expression ]`
+
+* = - Comparses whether two strings are equal
+* != - compares whether two strings are not equal
+* -n - Evaluates whether the string length is greater than zero
+* -z - Evaluates whether the string length is equal to zero
+* 
