@@ -280,4 +280,23 @@ The first parameter is stored in a variable called 1 (number 1) can be accessed 
 
 The second parameter is stored in a variable called `2` and can be accessed by using `$2` within the program, and so on.
 
+#### A Simple Example of a Positional Parameter
 
+```
+#!/bin/sh
+# Name display program
+if [ $# -eq 0 ]
+then
+    echo "Name not provided"
+else
+    echo "Your name is "$1
+fi
+
+# Output
+
+# bash mypgml
+# Name not provided
+
+# bash mypgml Sandra
+# Your name is Sandra
+```
