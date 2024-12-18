@@ -313,3 +313,23 @@ Shell scripts that contain positional parameters are often used for automating r
 * `$?` - The completion code of the last command or shell program executed within the shell program (returned value)
 * `$0` - The name of the shell program
 * `$*` - A single string of all arguments passed at the time of invocation of the shell program
+
+#### Special Characters
+
+* `$` - Indicates the beginning of a shell variable name
+* `|` - Pipes standard output to the nextcommand
+* `#` - Starts a comment
+* `&` - Executes a process in the background
+* `?` - Matches one character
+* `*` - Matches one or more characters
+* `>` - Redirects output
+* `<` - Redirects input
+* \` - Indicates command substitution
+* `>>` - Redirects output (to append to a file)
+* `<<` - Waits until the following end-of-input string (HERE operator)
+* `[ ]` - Specifies a range of characters
+* `[a-z]` - Specifies characters a through z
+* `[a,z] or [az]` - Specifies characters a or z
+* `Space` - Acts as a delimiter between two words
+
+A few special characters deserve special note: double quotes ("), single quoets ('), backslash (\), and backtick (`).
