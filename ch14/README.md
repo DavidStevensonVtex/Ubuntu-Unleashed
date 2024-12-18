@@ -263,3 +263,13 @@ Using Variables in Shell Scripts
 * Built-in variables - unlike environment variables, you cannot modify built-in variables.
 * User variables - Thse variables are defined with a script when you write a shell script.
 
+#### Assigning a Value to a Variable
+
+* bash: lcount=0 (no spaces!)
+* tcsh: set lcount=0
+
+* bash: myname=Sedona
+* tcsh: set myname=Sedona
+
+* bash: lcount=$var
+* tcsh: set lcount=$var
