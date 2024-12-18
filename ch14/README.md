@@ -396,8 +396,18 @@ echo "$var words"
 or
 `[ expression ]`
 
-* = - Comparses whether two strings are equal
+##### String Comparison
+
+* = - Compares whether two strings are equal
 * != - compares whether two strings are not equal
 * -n - Evaluates whether the string length is greater than zero
 * -z - Evaluates whether the string length is equal to zero
-* 
+
+##### Numeric Comparison
+
+* `-eq` - Compares whether two numbers are equal
+* `-ge` - Compares whether one number is greater than or equal to the other number
+* `-le` - Compares whether one number is less than or equal to the other number
+* `-ne` - Compares whether two numbers are not equal
+* `-gt` - Compares whether one number is greater than the other number
+* `-lt` - Compares whether one number is less than the other number
