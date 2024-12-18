@@ -231,3 +231,35 @@ myenv.sh
 #### Storing Shell Scripts for System-wide Access
 
 You can put new commands in `/etc/bashrc`. 
+
+#### Interpreting Shell Scripts Through Specific Shells
+
+The majority of shell scripts use a *shebang line* (#!) at the beginning to control the type of 
+shell used to run the script; this bang line calls for an sh-incantation of `bash`:
+
+`#!/bin/sh`
+A shebang lin (it is short for "sharp" and "bang", two names for # and !) tells the Linux kernel 
+that a specific command (a shell, or in the case of other scripts, perhaps *awk* or Perl) is to 
+be used to interpret the contents of the file.
+
+/bin/sh is a link to the Dash shell.
+
+```
+$ ll /bin/sh
+lrwxrwxrwx 1 root root 4 Jul 18  2019 /bin/sh -> dash*
+```
+
+/bin/bash is a link to the Bash shell
+
+The Shebang Line
+
+The Shebang line is a magic number.
+
+Avoiding the use of specific pathnames to programs increases shell script portability because 
+not every UNIX or Linux system has programs in the same location.
+
+Using Variables in Shell Scripts
+* Environment Variables
+* Built-in variables - unlike environment variables, you cannot modify built-in variables.
+* User variables - Thse variables are defined with a script when you write a shell script.
+
