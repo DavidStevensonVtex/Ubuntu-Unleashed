@@ -273,3 +273,11 @@ Using Variables in Shell Scripts
 
 * bash: lcount=$var
 * tcsh: set lcount=$var
+
+#### Positional Parameters
+
+The first parameter is stored in a variable called 1 (number 1) can be accessed by using `$1` within the program.
+
+The second parameter is stored in a variable called `2` and can be accessed by using `$2` within the program, and so on.
+
+
