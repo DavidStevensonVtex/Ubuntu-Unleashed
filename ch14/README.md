@@ -333,3 +333,28 @@ Shell scripts that contain positional parameters are often used for automating r
 * `Space` - Acts as a delimiter between two words
 
 A few special characters deserve special note: double quotes ("), single quoets ('), backslash (\), and backtick (`).
+
+##### Using Double Quoes to resolve Variables in Strings with Embedded Spaces
+
+If a string contains embedded spaces, you can enclose the string in double quotes (") so that the shell interprets the whole string as one entity instead of as more than one.
+
+Errors
+
+```
+$ x=abc def
+
+Command 'def' not found, did you mean:
+```
+
+No error:
+
+`x="abc def"`
+
+```
+var="test string"
+newvar="Value of var is $var"
+echo $newvar
+# Output: Value of var is test string
+```
+
+
