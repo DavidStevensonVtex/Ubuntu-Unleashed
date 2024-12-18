@@ -307,3 +307,9 @@ Shell scripts that contain positional parameters are often used for automating r
 
 #### Using a Simple Script to Automate Tasks
 
+#### Built-in Variables
+
+* `$*` - The number of positional parameters passed to the shell program
+* `$?` - The completion code of the last command or shell program executed within the shell program (returned value)
+* `$0` - The name of the shell program
+* `$*` - A single string of all arguments passed at the time of invocation of the shell program

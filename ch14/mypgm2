@@ -1,0 +1,11 @@
+#!/bin/sh
+#my test program
+echo "Number of parameters is $#"
+echo "Program name is $0"
+echo "Parameters as a single string is $*"
+
+# Output
+# bash mypgm2 Alan Turing
+# Number of parameters is 2
+# Program name is mypgm2
+# Parameters as a single string is Alan Turing
