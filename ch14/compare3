@@ -1,0 +1,40 @@
+#!/bin/sh
+# mkdir dir1
+# touch file1
+dir1=dir1
+file1=file1
+if [ -d $dir1 ]; then
+    echo "$dir1 is a directory"
+else
+    echo "$dir1 is not a directory"
+fi
+
+if [ -f $file1 ]; then
+    echo "$file1 is a regular file"
+else
+    echo "$file1 is not a regular file"
+fi
+
+if [ -r $file1 ]; then
+    echo "$file1 has read permission"
+else
+    echo "$file1 does not have read permission"
+fi
+if [ -w $file1 ]; then
+    echo "$file1 has write permission"
+else
+    echo "$file1 does not have write permission"
+fi
+
+if [ -x $dir1 ]; then
+    echo "$dir1 has execute permission"
+else
+    echo "$dir1 does not have execute permission"
+fi
+
+# $ bash compare3
+# dir1 is a directory
+# file1 is a regular file
+# file1 has read permission
+# file1 does not have write permission
+# dir1 has execute permission

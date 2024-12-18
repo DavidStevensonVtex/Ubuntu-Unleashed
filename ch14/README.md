@@ -411,3 +411,13 @@ or
 * `-ne` - Compares whether two numbers are not equal
 * `-gt` - Compares whether one number is greater than the other number
 * `-lt` - Compares whether one number is less than the other number
+
+##### File Operators
+
+* `-d` - Determines whether a file is a directory
+* `-f` - Determines whether a file is a regular file
+* `-r` - Determines whether read permission is set for a file
+* `-s` - Determines whether a file exists and has a length greater than zero
+* `-w` - Determines whether write permission is set for a file
+* `-x` - Determines whether execute permission is set for a file
+
