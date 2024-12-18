@@ -300,3 +300,7 @@ fi
 # bash mypgml Sandra
 # Your name is Sandra
 ```
+
+# Using Positional Parameters to Access and Retrieve Variables from the Command Line
+
+Shell scripts that contain positional parameters are often used for automating routing and mundane jobs.
