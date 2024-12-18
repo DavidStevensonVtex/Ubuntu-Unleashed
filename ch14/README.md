@@ -379,3 +379,13 @@ echo $var
 # Output: $test
 ```
 
+##### Using the Backtick to Replace a String with Output
+
+You can use the backtick (`) character to signal the shell to replace a strign with its output when executed. This is called *command substitution*.
+
+```
+echo "abc def ghi jkl mno" > test.txt
+var=`wc -w test.txt`
+echo "$var words"
+# Output: 5 test.txt words
+```
