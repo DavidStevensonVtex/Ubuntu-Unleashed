@@ -441,3 +441,19 @@ do
     statements
 done
 ```
+
+#### The `while` statement
+
+You can use the `while` statement to execute a series of commands while a specified condition is `true`.
+The loop terminates as soon as the specified condition evalutes to `false`.
+
+You should be careful with the `while` command because the loop never terminates if the specified condition never evaluates to `false`.
+
+```
+while expression
+do
+    statements
+done
+```
+
+

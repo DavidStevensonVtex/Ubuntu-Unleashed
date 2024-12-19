@@ -1,0 +1,7 @@
+#!/bin/sh
+# Endless loops have a place in shell programs
+
+while :
+do
+    /sbin/iwconfig eth0 | grep Link | tr '\n' '\r'
+done
