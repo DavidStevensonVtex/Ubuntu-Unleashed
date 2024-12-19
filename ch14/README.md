@@ -527,3 +527,18 @@ esac
 You can use the `break` statement to terminate an iteration loop, such as `for`, `until` or `repeat` command.
 
 You can use `exit` statement to exit a shell program You can optionally use a number after `exit`. If the current shell program has been called by another shell program, the calling program can check for the code (the $? or $status variable, depending on shell) and make a decision accordingly.
+
+#### Using Functions in Shell Scripts
+
+```
+func() {
+    Statements
+}
+```
+
+You can call a function as follows: 
+
+`func param1 param2 param3`
+
+(Parameters are optional)
+
