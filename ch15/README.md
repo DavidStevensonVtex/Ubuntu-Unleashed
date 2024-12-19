@@ -117,3 +117,26 @@ If you are using a runlevel other than 5, the final act of the `init` process is
 #### Controlling Services at Boot with Administrative tools
 
 You can configure what services run at startup with Startup Applications Preferences (shown in Fiture 15.1).
+
+#### Changing Runlevels
+
+You can use the `telinit` command to change runlevels on the fly on a running Ubuntu system.
+
+Inthe past a system administrator could quickly change the system to maintenance or single-user mode by using the `telinit` command with its `S` option, like this:
+
+`sudo telinit S`
+
+Today, the same thing would be done using this `systemd` command.
+
+`sudo systemctl rescue`
+
+The `telinit` command uses the `init` command to  change runlevels and shut down currently running sevices. However, under `systemd`, `telinit` is deprecated.
+
+After booting to single-user mode, you used then return to multi-user mode, like this:
+
+`sudo telinit 2`
+
+Today, the same thing would be done using the `systemd` command:
+
+`systemctl default`
+
