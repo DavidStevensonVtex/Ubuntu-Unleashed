@@ -140,3 +140,10 @@ Today, the same thing would be done using the `systemd` command:
 
 `systemctl default`
 
+#### Troubleshooting Runlevel Problems
+
+Use the following to read kernel output after booting:
+
+`dmesg | less`
+
+`cat /var/log/messages | less`
