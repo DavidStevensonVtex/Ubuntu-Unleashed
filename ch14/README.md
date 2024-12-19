@@ -456,4 +456,6 @@ do
 done
 ```
 
+#### The `repeat` Statement
 
+`repeat 80 echo -n '-'`
