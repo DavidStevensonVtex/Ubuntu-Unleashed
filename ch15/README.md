@@ -113,3 +113,7 @@ esac
 this script approach means that you do not have to halt the system in total to start, stop, upgrade, or install new services.
 
 If you are using a runlevel other than 5, the final act of the `init` process is to launch the user shell -- `bash`, `tcsh`, `zsh`, or any many other command shells available.
+
+#### Controlling Services at Boot with Administrative tools
+
+You can configure what services run at startup with Startup Applications Preferences (shown in Fiture 15.1).
