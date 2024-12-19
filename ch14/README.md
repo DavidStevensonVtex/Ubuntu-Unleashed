@@ -459,3 +459,18 @@ done
 #### The `repeat` Statement
 
 `repeat 80 echo -n '-'`
+
+#### The `shift` statement
+
+You use the `shift` statement to process the positional parameters, one at a time, from left to right.
+Recall that the positional parameters are identified as $1, $2, $3 and so on.
+The effect of the shift command is that each positional parameter is moved one position to the left, and the current $1 parameter is lost.
+
+The `shift` statement is useful when you are writing shell programs in which a user can pass various options.
+
+The format of the shift command is as follows:
+
+`shift number`
+
+If the number is not specifed, the default is 1.
+
