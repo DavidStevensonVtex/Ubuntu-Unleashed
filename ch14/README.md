@@ -542,3 +542,15 @@ You can call a function as follows:
 
 (Parameters are optional)
 
+### References
+
+* [The `bash` home page](http://www.gnu.org/software/bash)
+* [Mendel Cooper's Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html)
+* [Linux shell scripting tutorial](http://www.freeos.com/guides/lsst/)
+* [The Korn Shell website](http://kornshell.com/)
+* [The pdksh home page](http://web.cs.mun.ca/~michael/pdksh/)
+* [tcsh shell](http://www.tcsh.org/)
+* [zsh shell](http://www.zsh.org/)
+* [A Sed and Awk Micro-Primer](https://tldp.org/LDP/abs/html/sedawk.html)
+* [Sed Micro-Primer](https://tldp.org/LDP/abs/html/x23170.html)
+* [Awk Micro-Primer](https://tldp.org/LDP/abs/html/awk.html)
