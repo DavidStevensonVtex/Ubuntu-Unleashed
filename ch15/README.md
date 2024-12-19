@@ -75,3 +75,41 @@ Ubuntu boots into runlevel 5 by default, which means it starts the system as nor
 `ll /etc | egrep "rc[0-9A-Za-z].d"`
 
 The K or S in the file name prefixes indicates whether a particular service should be killed (K) or started (S) and pass a value of stop or start to the appropriate /etc/init.d script.
+
+The files have numbers that indicate the particular order.
+
+The files are symlinks to initialization files in the `/etc/init.d` folder.
+
+#### Understanding `init` Scripts and the Final State of Initialization
+
+The logic in `init` scripts may look like the following:
+
+```
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    reload)
+        reload
+        ;;
+    status)
+        rhstatus
+        ;;
+    condrestart)
+        [ -f /var/lock/sysys/smb ] && restart || : 
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop|restart|status|condrestart}"
+        exit 1
+esac
+```
+
+this script approach means that you do not have to halt the system in total to start, stop, upgrade, or install new services.
+
+If you are using a runlevel other than 5, the final act of the `init` process is to launch the user shell -- `bash`, `tcsh`, `zsh`, or any many other command shells available.
