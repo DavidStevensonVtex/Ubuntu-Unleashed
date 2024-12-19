@@ -147,3 +147,28 @@ Use the following to read kernel output after booting:
 `dmesg | less`
 
 `cat /var/log/messages | less`
+
+### Starting and Stopping Services Manually
+
+`sudo /etc/init.d/apachee2 start`
+Starting apache 2.2 web server
+
+### Using `Upstart`
+
+### Using `systemd`
+
+* systemctl start servicename service - Start a service
+* systemctl stop servicename service - Stop a service
+* systemctl restart servicename service - Restart a service
+* systemctl reload servicename service - Reload a service - rells the service to reload its configuration files
+* systemctl status servicename service - Show the status of a service
+* systemctl condrestart servicename service - Restart a service if it is already running
+* systemctl enable servicename service - Enable a service at startup
+* systemctl disable servicename service - Disable a service at startup
+* systemctl - list services
+* systemctl list-unit-files - show all installed unit files
+* systemctl halt - halt the system
+* systemctl reboot - reboot the system
+* journalctl -f - Follow the system log; replaces tail -f /var/log/message
+
+Services are defined in `systemd` unit files, which end with `.service`. Many exmples of these are found in `/lib/systemd/system`.
