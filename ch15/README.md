@@ -57,3 +57,13 @@ To make the system useful for users, you need to start the system servies.
 * Runlevels determine which of the many available system services are started, as well as which order they start.
 * A special runlevel is used to stop the system, and a special runlevel is used for system maintenance.
 
+#### Runlevel Definitions
+
+The runlevels are defined in a traditional Linux system in `/etc/init.d`. Some distributions use the traditional `/etc/inittab` file to manage boot services. Ubuntu has not used this file for several years. This book does not cover `/etc/inittab`.
+
+* Runlevel 0 - Known as "halt", this runlevel shuts down the system.
+* Runlevel 1 - This is a special runlevel, defined as "single" which boots Ubuntu to a root access shell prompt, where only the root user may log in. It has networking, X, and multiuser access turned off. This is the maintenance or rescue mode.
+* Runlevels 2-5 - These runlevels aren't used in Ubuntu in any way that distinguishes them from eachother, but they are used in other Linux distributions.
+* Runlevel 6 - This runlevel reboots the system.
+
+Never forget that uncontrolled physical access is a virtual guarantee of access to your data by an intruder.
