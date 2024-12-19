@@ -172,3 +172,9 @@ Starting apache 2.2 web server
 * journalctl -f - Follow the system log; replaces tail -f /var/log/message
 
 Services are defined in `systemd` unit files, which end with `.service`. Many exmples of these are found in `/lib/systemd/system`.
+
+### Boot-Repair
+
+Boot-Repair is a simple GUI tool you can use to fix such problems. Typically, it just reinstalls GRUB2, but using Boot-Repair is a much easier solution for many users.
+
+* [Boot-Repair](http://sourceforge.net/projects/boot-repair/)
