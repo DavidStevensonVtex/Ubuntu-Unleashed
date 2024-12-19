@@ -178,3 +178,9 @@ Services are defined in `systemd` unit files, which end with `.service`. Many ex
 Boot-Repair is a simple GUI tool you can use to fix such problems. Typically, it just reinstalls GRUB2, but using Boot-Repair is a much easier solution for many users.
 
 * [Boot-Repair](http://sourceforge.net/projects/boot-repair/)
+
+### References
+
+* [Ubuntu community documentation for GRUB2](https://help.ubuntu.com/community/Grub2)
+* [The official `systemd` documentation](https://systemd.io/)
+* [Obsolete - The official `systemd` documentation](https://wiki.freedesktop.org/www/Software/systemd/)
