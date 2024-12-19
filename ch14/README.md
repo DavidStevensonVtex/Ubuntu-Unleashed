@@ -487,3 +487,24 @@ fi
 ```
 
 `if` conditions can be nested.
+
+#### The `expr` Statement
+
+You use `expr` to evaluate an expression. It can evaluate numbers and mathematic expressions. It can also be used to evaluate strings and perform comparisons.
+
+```
+expr 12 + 2
+expr 26 - 24
+expr 6 \*3
+expr 11 / 3
+```
+
+* When you multiply, you must use an escape character before the multiplication operator for the command to parse properly.
+* When you divide, only the whol number result will be returned, so, for example `expr 11 / 3` returns 3. To get the remainder, use the modulo operator (%). `expr 11 % 2` returns 2.
+To find the length of a string, use the following:
+
+`expr length string`
+
+If the string includes spaces, use quotes or backslashes
+
+`expr length "Linux is cool"`
