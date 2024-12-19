@@ -508,3 +508,16 @@ To find the length of a string, use the following:
 If the string includes spaces, use quotes or backslashes
 
 `expr length "Linux is cool"`
+
+#### The `case` Statement
+
+```
+case str in
+    str1 | str2)
+        Statements;;
+    str3 | str4)
+        Statements;;
+    *)
+        Statements;;
+esac
+```
