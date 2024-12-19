@@ -50,3 +50,10 @@ TRaditionally, the Linux kernel loads and runs a process named `init`, which is 
 * Upstart was replaced by `systemd` as of Ubuntu 15.04.
 
 To make the system useful for users, you need to start the system servies.
+
+#### System Services and Runlevels
+
+* The `init` command traditionally boots a Linux system to a specific system state, commonly referred to as its *runlevel*.
+* Runlevels determine which of the many available system services are started, as well as which order they start.
+* A special runlevel is used to stop the system, and a special runlevel is used for system maintenance.
+
