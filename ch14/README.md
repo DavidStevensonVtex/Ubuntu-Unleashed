@@ -474,3 +474,16 @@ The format of the shift command is as follows:
 
 If the number is not specifed, the default is 1.
 
+#### The `if` Statement
+
+```
+if [ expression ]; then
+    Statements
+elif [ expression ]; then
+    Statements
+else
+    Statements
+fi
+```
+
+`if` conditions can be nested.

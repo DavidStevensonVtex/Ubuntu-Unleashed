@@ -1,0 +1,12 @@
+#!/bin/sh
+var=Maybe
+var=Yes
+var=No
+
+if [ $var = "Yes" ]; then
+    echo "Value is Yes"
+elif [ $var = "No" ]; then
+    echo "Value is No"
+else
+    echo "Invalid value"
+fi
