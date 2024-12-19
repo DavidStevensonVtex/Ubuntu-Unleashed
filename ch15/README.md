@@ -38,3 +38,15 @@ UEFI serves a similar role to BIOS and has replaced BIOS in most modern systems.
 * [UEFI](https://help.ubuntu.com/community/UEFI)
 
 [Difference between GPT and MBR when partitioning a drive](http://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/)
+
+#### Loading the Linux Kernel
+
+In a general sense, the kernel manages the system resources.
+
+TRaditionally, the Linux kernel loads and runs a process named `init`, which is also known as the "ancestor of all processes" because it starts every subsequent process.
+
+* The traditional `init` system was SysVInit. It has been replaced by newer options.
+* One of these options was `Upstart`.
+* Upstart was replaced by `systemd` as of Ubuntu 15.04.
+
+To make the system useful for users, you need to start the system servies.
