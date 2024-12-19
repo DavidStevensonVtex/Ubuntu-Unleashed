@@ -67,3 +67,11 @@ The runlevels are defined in a traditional Linux system in `/etc/init.d`. Some d
 * Runlevel 6 - This runlevel reboots the system.
 
 Never forget that uncontrolled physical access is a virtual guarantee of access to your data by an intruder.
+
+#### Booting into the Default Runlevel
+
+Ubuntu boots into runlevel 5 by default, which means it starts the system as normal and leaves you inside the X Window System, looking at the graphical login prompt. It knows what runlevel 5 needs to load by looking in the rc*.d directories in `/etc`. Ubuntu contains directories for rc0.d through to rc5.d and rcS.d.
+
+`ll /etc | egrep "rc[0-9A-Za-z].d"`
+
+The K or S in the file name prefixes indicates whether a particular service should be killed (K) or started (S) and pass a value of stop or start to the appropriate /etc/init.d script.
