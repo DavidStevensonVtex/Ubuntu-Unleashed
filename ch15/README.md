@@ -20,3 +20,21 @@ Starging in 2015, Ubuntu switch to another system systemd.
 Both upstart and systemd are designed to tackle the limitations of init, and allows for concurrent service initialization, that is, multiple services can startup at the same time, as long as they are not dependent on each other.
 
 Both Upstart and Systemd are event based.
+
+### Beginning the Boot Loading Process
+
+The BIOS is an application stored in a chip on the motherboard that initializes the hardware on the motherboard (and often the hardware that's attached to the motherboard). The BIOS gets the system ready to load and run the software that we recognize as the operating system.
+
+As a last step, the BIOS code looks for a special program known as the boot loader or boot code. These instructions tell the BIOS where the Linux kernel is located, how it should be loaded into memory, and how it should be started.
+
+If all goes well, the BIOS looks for a bootable volume such as a floppy disk, CD-ROM, hard drive, RAM disk, USB drive, or other media.
+
+MBR - Master Boot Record
+
+UEFI - Unified Extensible Firmware
+
+UEFI serves a similar role to BIOS and has replaced BIOS in most modern systems.
+
+* [UEFI](https://help.ubuntu.com/community/UEFI)
+
+[Difference between GPT and MBR when partitioning a drive](http://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/)
