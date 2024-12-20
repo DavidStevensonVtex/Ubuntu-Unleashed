@@ -122,3 +122,13 @@ Most commonly used log files:
 * lastlog - reads from /var/log/lastlog
 
 GUI - Logs
+
+#### Rotating Log Files
+
+`logrotate` utility
+
+Ubuntu comes with logrotate installced.
+
+Script at /etc/cron.daily/logrotate
+
+Configuration at /etc/logrotate.conf
