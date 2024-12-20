@@ -97,3 +97,28 @@ Swap:       2097148           0     2097148
 Display disk space used in (M)egabytes or (G)igabytes, etc.
 
 `$ df -h`
+
+#### Disk Quotas
+
+#### Checking Log Files
+
+Most log files can be found in `/var/log/` or its subdirectories.
+
+`sudo tail /var/log/boot.log`
+
+`sudo cat /var/log/dmesg | grep pnp`
+
+Most commonly used log files:
+
+* /var/log/apport.og - system crashes and reports
+* /var/log/auth.log - information about system access and when a user uses sudo
+* /var/log/boot.log - log during the computer startup
+* /var/log/kern.log - kernel messages, such as warnings and errors
+* /var/log/syslog - system events
+* /var/log/ufw.log - Ubuntu Firewall
+* /var/log/apt/history.log
+
+* faillog - reads from /var/log/faillog
+* lastlog - reads from /var/log/lastlog
+
+GUI - Logs
