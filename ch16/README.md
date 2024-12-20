@@ -64,3 +64,15 @@ This is the signal to "hang up" -- stop -- and then clean up all associated proc
 * kill -2 - Sends a SIGINT, which is an interrupt from the keyboard, the equivalent of sending `Ctrl+C`.
 * kill -11 - Sends a SIGSEGV, which causes the process to experience a segmentation fault and close.
 * kill -9 - Sends a SIGKILL, which should be a last resort because it does not sync any data. Nothing is written to disk - no logging, no debugging, nothing.
+
+`killall gedit` - kills all gedit processes
+
+#### Using Priority Scheduling and Control
+
+Two useful applications are the `nice` and `renice` commands.
+
+`time` - get an idea of how much time abd what proportion of a system's resources are required for a task, such as a shell script.
+
+`sudo time -p find / -name dstevenson`
+
+`htop` - one option for monitoring resource usage is called
