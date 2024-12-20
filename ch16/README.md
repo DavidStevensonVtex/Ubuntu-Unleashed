@@ -41,3 +41,26 @@ dstevenson@dstevensonlinux1:~/Ubuntu/Ubuntu-Unleashed/ch15$
 [1]+  Terminated              gedit
 dstevenson@dstevensonlinux1:~/Ubuntu/Ubuntu-Unleashed/ch15$
 ```
+
+#### Using the `kill` Command to Control Processes
+
+`$ kill option PID`
+
+`$ kill PID`
+
+Using a signal for `kill` tha cannot be caught (i is the number of the SIGKILL signal):
+Using this does not allow a process to shut down gracefully, and shutting down gracefully is usually preferred because it closes things that the process might have been using and ensures that logs are written beforet the process disappears.
+
+`$ kill -9 PID`
+
+Try this first:
+
+`$ kill -1 PID`
+
+This is the signal to "hang up" -- stop -- and then clean up all associated processes as well (1 is the number of the SIGHUP signal).
+
+* kill -15 - Sends a SIGTERM, which is a clean shutdown that flushes data that needs to be written to disk
+* kill -1 - Sends a SIGHUP, which cleans up and usually causes the system to restart.
+* kill -2 - Sends a SIGINT, which is an interrupt from the keyboard, the equivalent of sending `Ctrl+C`.
+* kill -11 - Sends a SIGSEGV, which causes the process to experience a segmentation fault and close.
+* kill -9 - Sends a SIGKILL, which should be a last resort because it does not sync any data. Nothing is written to disk - no logging, no debugging, nothing.
