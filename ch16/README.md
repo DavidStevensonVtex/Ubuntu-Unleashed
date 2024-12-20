@@ -76,3 +76,17 @@ Two useful applications are the `nice` and `renice` commands.
 `sudo time -p find / -name dstevenson`
 
 `htop` - one option for monitoring resource usage is called
+
+#### Displaying Free and Used Memory with `free`
+
+```
+$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8118604     1886204     2799888      267840     3432512     5658892
+Swap:       2097148           0     2097148
+```
+
+`watch free`
+
+`vmstat 5 10` - Virtual Memory Statistics, run very 10 seconds for 10 iterations
+
