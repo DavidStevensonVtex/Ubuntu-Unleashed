@@ -153,3 +153,9 @@ System Monitor is a graphical monitoring tool that is informative, easy to use a
 * vncviewer - AT&T's remote session manager
 * gnome-nettool 
 * wireshark
+
+### KDE Process and System Monitoring tools
+
+* kdf - displays free disk space and enables you to mount and unmount file systems
+* ksysguard - provides CPU load and memory use in animated graphs
+* 
