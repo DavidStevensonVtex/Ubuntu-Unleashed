@@ -166,3 +166,8 @@ Enterprise Server Monitoring
 * Nagios
 
 [Other Enterprise Server Monitoring Tools](https://help.ubuntu.com/community/Servers#Monitoring)
+
+### References
+
+* [Auto Nice Daemon](http://and.sourceforge.net/)
+* [Scheduling Utilities for real-time scheduling](http://sourceforge.net/projects/schedutils)
