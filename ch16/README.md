@@ -90,3 +90,10 @@ Swap:       2097148           0     2097148
 
 `vmstat 5 10` - Virtual Memory Statistics, run very 10 seconds for 10 iterations
 
+#### Disk Space
+
+`df`
+
+Display disk space used in (M)egabytes or (G)igabytes, etc.
+
+`$ df -h`
