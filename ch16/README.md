@@ -8,7 +8,8 @@
 
 `/proc` - file system
 
-[proc documentation](https://docs.kernel.org/filesystems/proc.html)
+* [proc documentation](https://docs.kernel.org/filesystems/proc.html)
+* [proc documentation](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html)
 
 ```
 $ ps
@@ -132,3 +133,17 @@ Ubuntu comes with logrotate installced.
 Script at /etc/cron.daily/logrotate
 
 Configuration at /etc/logrotate.conf
+
+### Graphical Process and System Management Tools
+
+Remote: X11 environment variable: $DISPLAY
+
+or use ssh clien't -X option when conneting to the remote host.
+
+
+#### System Monitor
+
+System Monitor is a graphical monitoring tool that is informative, easy to use and understand and very useful.
+#### Conky
+
+[Conky Documentation](https://github.com/brndnmtthws/conky)
