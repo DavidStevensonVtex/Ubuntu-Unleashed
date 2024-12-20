@@ -147,3 +147,9 @@ System Monitor is a graphical monitoring tool that is informative, easy to use a
 #### Conky
 
 [Conky Documentation](https://github.com/brndnmtthws/conky)
+
+#### Other Graphical Process and System-Monitoring tools
+
+* vncviewer - AT&T's remote session manager
+* gnome-nettool 
+* wireshark
