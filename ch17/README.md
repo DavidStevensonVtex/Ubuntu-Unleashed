@@ -107,3 +107,9 @@ Support for these drives are very good.
 A large USB external hard drive is also within the budgets of most and is the preferred option for anything more than could be held on one pen drive.
 
 The biggest benefits of USB drives are data transfer speed and portability.
+
+#### CD-RW and DVD+RW/-RW Drives
+
+Each CD-RW disc can old 650MB to 700 MB of data.
+
+DVD+RW/-RW is similar to CD-RW, but is more expensive and can store up to 8 GB of uncompressed data per disc.
