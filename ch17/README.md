@@ -80,3 +80,9 @@ Configuration and Data Files
 A full backup on a periodic basis is a strategy that involves a backup of the complete file system on a weekly, bi-weekly or other periodic basis.
 
 This backup strategy is not complicated to perform, and it can be accomplished with the swappable disk drives discussed later in this chapter.
+
+#### Full Backups with Incremental Backusp
+
+Another scheme involves performing a full backup of the entire system once per week, along with a daily incremental backup of only those files that have changed in the previous day, and it begins to resemble what a system administrator of a medium to large system traditionally uses.
+
+`dump`
