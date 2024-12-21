@@ -46,3 +46,18 @@ Sound Practices
 * Keep track of who has access to your backup media
 * Routinely verify backups and practice restorign data from them
 * Routinely inspect backup media for defects and regularly replace them.
+
+#### Evaluating Backup Strategies
+
+* Home user
+* Small office
+* Small enterprise
+* Large enterprise
+
+Backup Levels
+
+* 0 - Full backup
+* 1 - Everything that has changed since the last backup
+* 2
+* 3 - Generates an incremental backup from the full backup
+* 4 - Differential backup
