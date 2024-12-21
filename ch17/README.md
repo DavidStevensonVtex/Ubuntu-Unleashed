@@ -113,3 +113,11 @@ The biggest benefits of USB drives are data transfer speed and portability.
 Each CD-RW disc can old 650MB to 700 MB of data.
 
 DVD+RW/-RW is similar to CD-RW, but is more expensive and can store up to 8 GB of uncompressed data per disc.
+
+#### Network Storage
+
+#### Tape Drive Backups
+
+#### Cloud Storage
+
+Services such as Dropbox and Amazon's AWS and S3 offer a way to create and store backups offsite.
