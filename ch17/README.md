@@ -121,3 +121,8 @@ DVD+RW/-RW is similar to CD-RW, but is more expensive and can store up to 8 GB o
 #### Cloud Storage
 
 Services such as Dropbox and Amazon's AWS and S3 offer a way to create and store backups offsite.
+
+### Using Backup Software
+
+* [Déjà Dup Backups](https://apps.gnome.org/DejaDup/)
+* Amanda
