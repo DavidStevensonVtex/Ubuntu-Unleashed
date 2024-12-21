@@ -93,3 +93,17 @@ Another scheme involves performing a full backup of the entire system once per w
 
 * If the backup strategy is too complicated, it will be disregarded and fall into disuse
 * The best scheme is often a combination of strategies; use what works.
+
+### Choosing Backup Hardware and Media
+
+#### Removable Storage Media
+
+USB hard drives and solid-state "pen" drives have taken over the niche previously held by floppy drives.
+
+Bot USB hard drives and solid-state drives are highly portable.
+
+Support for these drives are very good.
+
+A large USB external hard drive is also within the budgets of most and is the preferred option for anything more than could be held on one pen drive.
+
+The biggest benefits of USB drives are data transfer speed and portability.
