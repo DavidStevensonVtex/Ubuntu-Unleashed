@@ -74,3 +74,9 @@ Configuration and Data Files
 
 * /home
 * /etc
+
+#### Full Backup on a Periodic Basis
+
+A full backup on a periodic basis is a strategy that involves a backup of the complete file system on a weekly, bi-weekly or other periodic basis.
+
+This backup strategy is not complicated to perform, and it can be accomplished with the swappable disk drives discussed later in this chapter.
