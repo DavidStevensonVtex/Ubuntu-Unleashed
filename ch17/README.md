@@ -86,3 +86,10 @@ This backup strategy is not complicated to perform, and it can be accomplished w
 Another scheme involves performing a full backup of the entire system once per week, along with a daily incremental backup of only those files that have changed in the previous day, and it begins to resemble what a system administrator of a medium to large system traditionally uses.
 
 `dump`
+
+#### Mirroring Data or RAID Arrays
+
+#### Making the Choice
+
+* If the backup strategy is too complicated, it will be disregarded and fall into disuse
+* The best scheme is often a combination of strategies; use what works.
