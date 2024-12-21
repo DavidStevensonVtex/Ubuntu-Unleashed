@@ -61,3 +61,16 @@ Backup Levels
 * 2
 * 3 - Generates an incremental backup from the full backup
 * 4 - Differential backup
+
+#### Simple Strategy
+
+If you need to backup just a few configuration files and some small data files, copy them to a USB stick, label it, and keept it somewhere s afe.
+
+You can copy the important files to a CD-RW disc (up to 700 MB in size), or a DVD-RW disc (up to 8GB for data).
+
+Most users have switched to using an external hard drive for backups because they are becoming less and less expensive and hold a great amount of data, or they have moved backups online.
+
+Configuration and Data Files
+
+* /home
+* /etc
