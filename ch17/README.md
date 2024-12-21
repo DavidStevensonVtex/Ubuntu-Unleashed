@@ -126,3 +126,21 @@ Services such as Dropbox and Amazon's AWS and S3 offer a way to create and store
 
 * [Déjà Dup Backups](https://apps.gnome.org/DejaDup/)
 * Amanda
+
+#### [`tar`](http://www.gnu.org/software/tar/manual): The Most Basic Backup Tool
+
+`info tar`
+
+`sudo tar cvf etc.tar /etc`
+
+`sudo tar cv /etc > etc.tar`
+
+##### Creating Full and Incremental Backups with `tar`
+
+To create fullbackup, using bzip2 compression of the entire system:
+
+`sudo tar cjvf fullbackup.tar.bz2 /`
+
+To perform an incremental backup, you must locate all the files that have been changed since the last backup.
+
+`sudo find / -newer name_of_last_backup_file ! -a -type f -print`
