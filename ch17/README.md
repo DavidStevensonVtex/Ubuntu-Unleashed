@@ -357,3 +357,8 @@ If you cannot mount the drive at all, you options become more limited and possib
 Every experienced system administrator has had a drive fail; no hardware is infallible. We expect occasional hardware failures, and that's why we have a good backup and recovery schemes in place for data.
 
 There are two types of system administrators: those who lose data when this happens and those who have good schemes in place. Be forewarned and be wise.
+
+### References
+
+* [Backup Your System](https://help.ubuntu.com/community/BackupYourSystem)
+* [Linux Documentation Project](http://www.tldp.org/)
