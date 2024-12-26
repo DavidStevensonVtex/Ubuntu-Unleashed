@@ -185,3 +185,12 @@ See 'snap info ark' for additional versions.
 Back In Time is a viable alternative to Déjà Dup for many users. It is easily availble from the Ubuntu software repositories, is stable, has a clear and easy-to-understand interface, and is actually little more than a GUI front end for well-established tools.
 
 ### [Unison](https://github.com/bcpierce00/unison)
+
+[Unison File Synchronizer](https://www.cis.upenn.edu/~bcpierce/unison/)
+
+### [Amanda](http://www.amanda.org/)
+
+Amanda is a powerful network backup application created by the University of Maryland at College Park.
+Amanda is a robust backup and restore application best suited to unattended backups with an autoloading tape drive of adequate capacity.
+
+There is no GUI for Amanda. Configuration is done with text files in `/etc/amanda`.
