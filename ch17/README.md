@@ -164,3 +164,16 @@ compression formats.
 This seems to go by the name Archive Manager in activities.
 
 * [File Roller](https://help.ubuntu.com/community/File%20Roller)
+
+### The KDE `ark` Archiving tool
+
+```
+Command 'ark' not found, but can be installed with:
+
+sudo snap install ark  # version 24.08.3, or
+sudo apt  install ark  # version 4:19.12.3-0ubuntu1.2
+
+See 'snap info ark' for additional versions.
+```
+
+`ark` is integrated with the KDE desktop (as File Roller is with GNOME), so it might be a better choice if you use KDE.
