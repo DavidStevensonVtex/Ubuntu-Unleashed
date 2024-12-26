@@ -257,3 +257,20 @@ The Midnight Commander `mc` is a command-line file manager that is useful for co
 
 The Midnight Commander looks and feels similr to the Norton Commander of DOS fame.
 
+#### Using `rsync`
+
+An old favorite for backing up is `rsync`. One big reason for this is that `rsync` enables you to copy only files that have changed since the last backup. With this tool, although the initial backup might take a long time, subsequent backups are much faster. `rsync` is also highly configurable and can be used with removable media such as USB hard drives or over a network.
+
+First, create an empty file and call it backup.sh:
+
+`$ sudo touch backup.sh`
+
+```
+rsync --force --ignore-errors --delete --delete-excluded --exclude-from=/home/matthew-exclude.txt --backup --backup-dir=`date +%Y-%m-%d` -av / /media/externaldrive/backup/Seymour
+```
+
+`$ sudo chmod +x backup.sh`
+
+To restore:
+
+`$ rsync --force --ignore-errors --delete --delete-excluded /media/externaldrive/backup/seymour`
