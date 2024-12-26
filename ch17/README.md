@@ -233,3 +233,21 @@ The following `tar` command options can be useful for creating file copies for b
 
 `$ tar -cvzf data_folder | ssh remote_host '( cd ~/mybackup_dir; tar -xvzf )'`
 
+#### Copy Files Using `cp`
+
+`$ cp -a source_diretory target_directory`
+
+The `-a` argument is the same as `-dpR`:
+
+* -d - Preserves symbolic links (by not dereferencing them) and copies the files that they point to instead of copying the links.
+* -p - Presserves all file attributes, if possible. (File ownership might interfere)
+* -R - Copies diretories recursively
+
+You can also use the`cp` command to quickly replicate directories and retain permissiosn by using it with the `-avR` command line-options.
+
+`$ sudo cp -avR directory_to_backup destination_vol_or_dir 1 > /root/backup_log.txt`
+
+`$ sudo cp -avR ubuntu /test2 1 > /root/backup_log.txt`
+
+This example makes an exact copy of the directory named `/ubuntu` on the volume named /test2 and saves a backup report named `backup_log.txt` under `/root`.
+
