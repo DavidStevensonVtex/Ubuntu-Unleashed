@@ -304,3 +304,46 @@ You can roll a change back to the original version:
 The Ubuntu installation DVD (or an installation USB drive) works quite well as a live DVD.
 To use it, insert the disc and reboot the computer, booting from the DVD just you did when you installed Ubuntu originally and ran it from the DVD.
 
+#### Restoring the GRUB2 Boot Loader
+
+The easiest way to restore a broken system's GRUB2 files is simply to replace them. Your best bet is to use installation media from the same release as what you have isntalled on the hard drive.
+
+To get started, boot using the live DVD and open a terminal. Then determine which of the hard drive's partitions holds the Ubuntu installation, which you can discover by using the following:
+
+`$ sudo fdisk -l`
+
+`$ sudo fdisk /dev/sdb`
+
+`$ sudo blkid`
+
+`$ man fstab`
+
+```
+FSTAB(5)                                                                    File Formats                                                                   FSTAB(5)
+
+NAME
+       fstab - static information about the filesystems
+
+SYNOPSIS
+       /etc/fstab
+
+DESCRIPTION
+       The file fstab contains descriptive information about the filesystems the system can mount.  fstab is only read by programs, and not written; it is the duty
+       of the system administrator to properly create and maintain this file.  The order of records in fstab is important because fsck(8), mount(8), and  umount(8)
+       sequentially iterate through fstab doing their thing.
+```
+
+`$ sudo mount /dev/sda1 /mnt`
+
+This mounts the drive in the current file system (running from the live DVD) at `/mnt`, where it will be accessible to you for reading and modifying as needed. Next, you reinstall GROUP2 on this device.
+
+`$ sudo grub-install --boot-directory=/mnt/boot /dev/sda`
+
+At this point, reboot (using your harddrive and not the live DVD), and all should be well.
+After the reboot is complete, enter the following:
+
+`$ sudo update-grub`
+
+This refreshes the GRUB2 menuand completes the restoration. You can find a lot of great information about GRUB2:
+
+* [GRUB2](https://help.ubuntu.com/community/Grub2)
