@@ -296,3 +296,11 @@ You can roll a change back to the original version:
 `$ bzr log /etc/bash.bashrc`
 
 `$bzr revert =-revision 2 /etc/bash.bashrc`
+
+### System Rescue
+
+#### The Ubuntu Rescue Disc
+
+The Ubuntu installation DVD (or an installation USB drive) works quite well as a live DVD.
+To use it, insert the disc and reboot the computer, booting from the DVD just you did when you installed Ubuntu originally and ran it from the DVD.
+
