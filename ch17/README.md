@@ -155,7 +155,7 @@ To list the contents of a tar archive compressed with `bzip2`:
 
 `$ sudo tar tjvf ubuntutest.tar.bz2`
 
-### The GNOME File Roller
+#### The GNOME File Roller
 
 The GNOME desktop file archiving graphical applicatin File Roller (`file-roller`) views, extracts, 
 and creates archive files using `tar, gzip, bzip, compress, zip, rar, lha,` and serveral other 
@@ -165,7 +165,7 @@ This seems to go by the name Archive Manager in activities.
 
 * [File Roller](https://help.ubuntu.com/community/File%20Roller)
 
-### The KDE `ark` Archiving tool
+#### The KDE `ark` Archiving tool
 
 ```
 Command 'ark' not found, but can be installed with:
@@ -178,24 +178,33 @@ See 'snap info ark' for additional versions.
 
 `ark` is integrated with the KDE desktop (as File Roller is with GNOME), so it might be a better choice if you use KDE.
 
-### [Déjà Dup Backups](https://apps.gnome.org/DejaDup/)
+#### [Déjà Dup Backups](https://apps.gnome.org/DejaDup/)
 
-### [Back In Time](https://backintime.readthedocs.io/)
+#### [Back In Time](https://backintime.readthedocs.io/)
 
 Back In Time is a viable alternative to Déjà Dup for many users. It is easily availble from the Ubuntu software repositories, is stable, has a clear and easy-to-understand interface, and is actually little more than a GUI front end for well-established tools.
 
-### [Unison](https://github.com/bcpierce00/unison)
+#### [Unison](https://github.com/bcpierce00/unison)
 
 [Unison File Synchronizer](https://www.cis.upenn.edu/~bcpierce/unison/)
 
-### [Amanda](http://www.amanda.org/)
+#### [Amanda](http://www.amanda.org/)
 
 Amanda is a powerful network backup application created by the University of Maryland at College Park.
 Amanda is a robust backup and restore application best suited to unattended backups with an autoloading tape drive of adequate capacity.
 
 There is no GUI for Amanda. Configuration is done with text files in `/etc/amanda`.
 
-### Alternative Backup Software
+#### Alternative Backup Software
 
 * `flexbackup` - use `flexbackup -help` for more information
 * `afio`
+
+### Copying Files
+
+YOu can use the `tar, cp, rsync,` and even `cpio` commands to copy files.
+
+`tar` is a traditional choice because older versions of `cp` did not handle symbolic links and permissions well at times, causing those attributes to be lost; `tar` handle those file attributes in a better manner.
+
+`cp` has been improved to vix those problems, but `tar` is still more widely used. 
+`rsync` is an excellent choice for mirroring sets of files, especially when done over a network.
