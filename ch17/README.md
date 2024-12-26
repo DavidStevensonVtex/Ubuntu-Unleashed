@@ -274,3 +274,25 @@ rsync --force --ignore-errors --delete --delete-excluded --exclude-from=/home/ma
 To restore:
 
 `$ rsync --force --ignore-errors --delete --delete-excluded /media/externaldrive/backup/seymour`
+
+### Version Control for Configuration Files
+
+For safety and ease of recovery when configuration files are corrupted or incorrectly edited, the use of a version control system is recommended. In fact, this is considered industry best practice.
+
+Version control systems are designed to make it easy to revert changes made to a file, even after the file has been saved.
+
+`etckeeper` takes all of your `/etc/ directory and stores the configuration files from it in a version control system repository. You can configure the program by editing the etckeeper.conf file to store data in a Git, Mercurial, Bazaar, or Subversion repository.
+
+By default, etckeeper uses Git.
+
+First, edit /etc/etckeeper/etckeeper.conf to use your desired settingsm such as the version control system to use, the system package manager being used, and whether to have changes automatically committed daily.
+
+`$ etckeeper init`
+
+`$ etckeeper commit "Changed prompt style"`
+
+You can roll a change back to the original version:
+
+`$ bzr log /etc/bash.bashrc`
+
+`$bzr revert =-revision 2 /etc/bash.bashrc`
