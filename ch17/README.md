@@ -346,4 +346,14 @@ After the reboot is complete, enter the following:
 
 This refreshes the GRUB2 menuand completes the restoration. You can find a lot of great information about GRUB2:
 
-* [GRUB2](https://help.ubuntu.com/community/Grub2)
+* [GRUB2](https://help.ubuntu.com/community/Grub2)\
+
+#### Saving Files from a Nonbooting Hard Drive
+
+If restoring the GRUB2 boot loader fails and you still cannot boot from the hard drive, try to use the live DVD to recover you data. Boot and mount the hard drive qas shown previously and then attach an external st orage device such as a USB thumb drive or an external hard drive. Then copy the files you want to save from the mounted drive to the external drive.
+
+If you cannot mount the drive at all, you options become more limited and possibly more expensive.
+
+Every experienced system administrator has had a drive fail; no hardware is infallible. We expect occasional hardware failures, and that's why we have a good backup and recovery schemes in place for data.
+
+There are two types of system administrators: those who lose data when this happens and those who have good schemes in place. Be forewarned and be wise.
