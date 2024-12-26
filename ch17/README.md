@@ -154,3 +154,13 @@ To restore a `tar` archive compressed with bzip2:
 To list the contents of a tar archive compressed with `bzip2`:
 
 `$ sudo tar tjvf ubuntutest.tar.bz2`
+
+### The GNOME File Roller
+
+The GNOME desktop file archiving graphical applicatin File Roller (`file-roller`) views, extracts, 
+and creates archive files using `tar, gzip, bzip, compress, zip, rar, lha,` and serveral other 
+compression formats.
+
+This seems to go by the name Archive Manager in activities.
+
+* [File Roller](https://help.ubuntu.com/community/File%20Roller)
