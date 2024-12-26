@@ -180,3 +180,6 @@ See 'snap info ark' for additional versions.
 
 ### [Déjà Dup Backups](https://apps.gnome.org/DejaDup/)
 
+### [Back In Time](https://backintime.readthedocs.io/)
+
+Back In Time is a viable alternative to Déjà Dup for many users. It is easily availble from the Ubuntu software repositories, is stable, has a clear and easy-to-understand interface, and is actually little more than a GUI front end for well-established tools.
