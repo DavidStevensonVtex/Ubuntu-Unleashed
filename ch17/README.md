@@ -208,3 +208,23 @@ YOu can use the `tar, cp, rsync,` and even `cpio` commands to copy files.
 
 `cp` has been improved to vix those problems, but `tar` is still more widely used. 
 `rsync` is an excellent choice for mirroring sets of files, especially when done over a network.
+
+#### Copying Files Using `tar`
+
+`$ tar -cvf files | (cd target_directory ; tar -xpf)`
+
+In this command, `file` is the filenames you want to include; you can use * to include the entire current directory.
+
+* c - creates an archive
+* v - specifies verbose - that is lists the files proccessed you you can see it is working
+* f - specifies the filename of the archive. (In this case, it is -)
+
+
+* x - Extract
+* p - Set permissions of extracted files to those recorded in the archive
+* f - Use archive file or device ARCHIVE.  If this option is not given, tar will first examine the environment variable `TAPE'.  If it is set, its value will be used as the archive name.  Otherwise, tar will assume the compiled-in default.
+
+The following `tar` command options can be useful for creating file copies for backup purposes:
+
+* l - Stay in the local file system (so that you do not include remove volumes)
+* atime-preserve - Do not change access times on the files, even though you are accessing them now
