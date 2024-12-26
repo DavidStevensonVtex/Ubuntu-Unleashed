@@ -177,3 +177,6 @@ See 'snap info ark' for additional versions.
 ```
 
 `ark` is integrated with the KDE desktop (as File Roller is with GNOME), so it might be a better choice if you use KDE.
+
+### [Déjà Dup Backups](https://apps.gnome.org/DejaDup/)
+
