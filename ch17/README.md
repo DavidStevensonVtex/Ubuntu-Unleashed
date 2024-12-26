@@ -144,3 +144,13 @@ To create fullbackup, using bzip2 compression of the entire system:
 To perform an incremental backup, you must locate all the files that have been changed since the last backup.
 
 `sudo find / -newer name_of_last_backup_file ! -a -type f -print`
+
+##### Restoring Files from an Archive with `tar`
+
+To restore a `tar` archive compressed with bzip2:
+
+`$ sudo tar xjvf ubuntutest.tar.bz2`
+
+To list the contents of a tar archive compressed with `bzip2`:
+
+`$ sudo tar tjvf ubuntutest.tar.bz2`
