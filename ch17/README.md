@@ -194,3 +194,8 @@ Amanda is a powerful network backup application created by the University of Mar
 Amanda is a robust backup and restore application best suited to unattended backups with an autoloading tape drive of adequate capacity.
 
 There is no GUI for Amanda. Configuration is done with text files in `/etc/amanda`.
+
+### Alternative Backup Software
+
+* `flexbackup` - use `flexbackup -help` for more information
+* `afio`
