@@ -228,3 +228,8 @@ The following `tar` command options can be useful for creating file copies for b
 
 * l - Stay in the local file system (so that you do not include remove volumes)
 * atime-preserve - Do not change access times on the files, even though you are accessing them now
+
+#### Compressing, Encrypting, and Sending `tar` Streams
+
+`$ tar -cvzf data_folder | ssh remote_host '( cd ~/mybackup_dir; tar -xvzf )'`
+
