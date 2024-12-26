@@ -251,3 +251,9 @@ You can also use the`cp` command to quickly replicate directories and retain per
 
 This example makes an exact copy of the directory named `/ubuntu` on the volume named /test2 and saves a backup report named `backup_log.txt` under `/root`.
 
+#### Copying Files Using `mc`
+
+The Midnight Commander `mc` is a command-line file manager that is useful for copying, moving, and archiving files and directories.
+
+The Midnight Commander looks and feels similr to the Norton Commander of DOS fame.
+
