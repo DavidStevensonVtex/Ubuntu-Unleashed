@@ -136,3 +136,20 @@ traceroute google.com
 
 The third tool, `mtr`, combines the functionality of `ping` and `traceroute` and gives you a live display of the data as it runs, as shown in this example.
 
+### Networking with TCP/IP
+
+The basic building block for any network based on UNIX hosts is the *Transmission Control Protocol/Internet Protocol (TCP/IP)* suite, which includes three protocols even though only two appear in the name.
+*User Datagram Protocol (UDP)* is a connectionless protocol.
+
+In TCP/IP, all data travels via IP packets, which is why addresses are referred to as *IP addresses*.
+
+Ubuntu and Networking
+
+[Linux USB Project](http://www.linux-usb.org/)
+
+Other graphical network clients for use with Linux
+
+* [Nmap](http://nmap.org/)
+* [Netcat](http://nc110.sourceforge.net/)
+* [Wireshark](http://www.wireshark.org/)
+* [tcpdump](http://www.tcpdump.org/)
