@@ -247,3 +247,18 @@ Speical-use, reserved IPv6 addresses:
 * 2001:db8::/32 are the documentation addresses. They are used for documentation purposes such as user manuals, RFCs and so on.
 * ::0 is the default unicast route address.
 * ff00::/8 are multicast addresses.
+
+### Network Organization
+
+Properly organizing your network addressing process grows more difficult as the size of your network grows.
+
+#### Subnetting
+
+Within Class A and B networks, there can be separate networks called *subnets*. Subnets are considered part of the host portion of an address for network class definitions. For example, in the 128. Class B network, you can have one computer with address 128.10.10.10 and anotehr with address 128.10.200.20; these computers are on the same network. Because of this, communication between the two computers requires either a router or a switch. Subnets can be helpful for separating workgroups within a company.
+
+Often subnets c an be used to separate workgroups that have no real need to interact with or to shield from other groups' information passing among members of a specific workgroup.
+
+Subnet use also enables your network to grow beyond 254 hosts and share IP addresses.
+With proper routing configuration, users might not even know they are on a different subnet from their co-workers.
+
+Another common use for subnetting is with networks that cover a wide geographic area.
