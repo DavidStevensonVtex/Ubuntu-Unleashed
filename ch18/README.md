@@ -153,3 +153,33 @@ Other graphical network clients for use with Linux
 * [Netcat](http://nc110.sourceforge.net/)
 * [Wireshark](http://www.wireshark.org/)
 * [tcpdump](http://www.tcpdump.org/)
+* 
+#### TCP/IP Addressing
+
+Internet IP addresses (also known as *public* IP addresses). Internet IP addresses are assigned (for the United States and some other hosts) by the American Registry for Internet Numbers ([ARIN](http://www.arin.net/)). ARIN assigns *Internet service providers (ISPs)* one or more blocks of IP addresses, while the ISPs can then assign to their subscribers.
+
+A TCP/IP address is expressed as a series of four decimal numbers: a 32-bit value expressed in a format known as dotted-decimal format, such as 192.168.0.1. Each set of numbers is known as an *octet) (eight 1s and 0s, such as 10000000 to represent 128) and ranges from 0 to 255.
+
+There are three classes of networks:
+
+* Class A - Consists of networks with the first octet ranging from 1 to 126. There are only 126 Class A networks, each composed of up to 16,777,214 hosts. No host portion of an address can be all 0s or 255s. The 10. network is reserved for local network use, and the 127. network is reserved for the loopback address, 127.0.0.1. This address does not appear and is not accessible on your LAN.
+
+* Class B - Consists of networks defined by the first two octets, with the first ranging from 128 to 191. The 128. network is also reserved for local network use. Therea rea 16,382 Class B networks, each with 65,534 possible hosts.
+
+* Class C - Cosnists of a network defined by the first three octets with the first ranging from 192 to 223. The 192. network is another that is reserved for local network use. Therea are a possible 2,097,150 Class C networks of up to 254 hosts each.
+
+The 0 address is used for network-to-network broadcasts. Also note that there are two other classes of networks, Classes D and E. Class D networks are reserved for multicast addresses and are not for use by network hosts. Class E addresses are deemed experimental and thus are not open for public addressing.
+
+These classes are standard, but a *netmask* also determines what class your network is in. Common netmasks for the different c lasses are as follows:
+
+* Class A - 255.0.0.0
+* Class B - 255.255.0.0
+* Class C - 255.255.255.0
+
+Limits of IPv4 Addressing
+
+The IPv4 address scheme is based on32-bit numbering and limits the number of available IP addresses to about 4.1 billion. Many companies and organizations (particularly in the United States) were assigned very large blocks of IP addresses in the early stages of growth of the Internet, which has left a shortage of "open" addresses. The Internet might run out of available addresses.
+
+To solve this problem, a newer scheme named IP version 6 (IPv6) is being implemented. It uses a much larger addressing solution that is based on 128-bit addresses.
+
+Migrtation to IPv6 is slow in coming, however, because many computer operating systems, software, hardware, firmware, and users are in the IPv4 mindset. Supporting IPv6 requires rewriting many network utilities, portions of operating systems currently in use, and firmware in routing and firewall hardware.
