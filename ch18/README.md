@@ -183,3 +183,8 @@ The IPv4 address scheme is based on32-bit numbering and limits the number of ava
 To solve this problem, a newer scheme named IP version 6 (IPv6) is being implemented. It uses a much larger addressing solution that is based on 128-bit addresses.
 
 Migrtation to IPv6 is slow in coming, however, because many computer operating systems, software, hardware, firmware, and users are in the IPv4 mindset. Supporting IPv6 requires rewriting many network utilities, portions of operating systems currently in use, and firmware in routing and firewall hardware.
+
+#### Using IP Masquerading in Ubuntu
+
+Three blocks of IP addresses are reserved for use on internal networks and hosts not directly connected to the Internet. The address ranges are from 10.0.0.0 to 10.255.255.255, or 1 Class A network; from 172.16.0.0 to 172.31.255.255, or 16 Class B networks, and from 192.168.0.0 to 192.168.255.255, 256 Class C networks. use these IP addresses when building a LAN for your business or home. Which class you choose can depend on the number of hosts on your network.
+
