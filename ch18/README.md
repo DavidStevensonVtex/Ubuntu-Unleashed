@@ -273,3 +273,13 @@ By using customized netmasks, you can subnet your network to fit your needs.
 See *Sam's Teach Yourself TCP/IP Network Administration in 21 Days*, Day 6, "The Art of Subnet Masking".
 
 [Linux Network Administrator's Guide](http://www.tldp.org/LDP/nag2/index.html)
+
+#### Broadcast, Unicast, and Multicast Addresssing
+
+Information can get to systems through three types of addresses: unicast, multicast, and broadcast.
+
+* **Unicast** - Sends information to one specific host. Unicast addresses are used for Telnet, FTP, SSH or any other information needs to be shared in a one-to-one exchange of information.
+
+* **Multicasting** - Broadcasts information to groups of computers sharing an application, such as a video conferencing client or an online gaming application. All the machiens participating in the conference or game require the same information at precisely the same time to be effective.
+
+* **Broadcasting** - Transmits information to all the hosts on a network or subnet. *Dynamic Host Configuration Protocol (DHCP) uses broadcast messages when the DHCP client looks for a DHCP server to get its network settigns, and *Reverse Address Resolution Protocol (RARP) uses broadcast messages tfor hardware address-to-IP address resolution. Broadcast messages use .255 in all the host octets of the networ IP address. (10.2.255.255 broadcasts to every host in your class B network).
