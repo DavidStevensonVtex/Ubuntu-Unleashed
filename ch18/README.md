@@ -203,3 +203,47 @@ smtp		25/tcp		mail
 http		80/tcp		www		# WorldWideWeb HTTP
 pop3		110/tcp		pop-3		# POP version 3
 ```
+
+### IPv6 Basics
+
+As IPv6 receives greater acceptance and use, this understanding shoul be adequate to help you transition between the two, even if specific issues are not addressed in the chapter.
+
+IPv6 supports 3.4 x 10^38 addresses. We don't need NAT in IPv6 to translate IP addresses as packets pass through a routing device, as there are an adequate number of IP addresses available.
+
+IPv6 allows us to go back to the easier-to-configure peer-to-peer style of Internet networking originally conceived of and used in the 1980s. This creates routing tables that are much smaller because fewere subroutes need to be generated.
+
+Useful featuers that IPv6 includes:
+
+* Address autoconfiguration (RFC2462)
+* Anaycast addresses ("one-out-of-many")
+* Mandatory multicast addresses
+* IPsec (IP Security)
+* Simplified header structure
+* Mobile IP
+* IPv6-to-IPv4 transition mechanisms
+
+IPv6 addresses are created using eight sets of numbers, like this:
+
+`2603:7080:9603:e32e:ce0:8865:ecb1:f9a2`
+
+Each of the eight sectiosn is made of a four-digit number in hexadecimal.
+Eachs set of 4 hex digits represents 16 bits or numbers 0-65535.
+
+Often an address has long substrings of all zeros; the longest and first run of all-zero sections is abbreviated as a double colon (::)> Because :: is variable in length, it can be used only once per address.
+
+It is also possible to write the last 32 bits of an IPv6 address using the well-known IPv4 format. Forexample, 2002::10.0.0.1 corresponds to the long form 2002:0000:0000:0000:0000:0000:0a00:0001.
+
+In IPv6, the first 48 bits are for Internet routing (network addressing).
+
+the 16 bits from the 49th to the 54th are for defining subnets:
+
+The last 64 bits are for device (interface) IDs.
+
+Speical-use, reserved IPv6 addresses:
+
+* ::1/128 is the loopback address
+* ::/128 is the unspecified address
+* ::IPv4-address/96 are the IPv4-compatible addresses.
+* 2001:db8::/32 are the documentation addresses. They are used for documentation purposes such as user manuals, RFCs and so on.
+* ::0 is the default unicast route address.
+* ff00::/8 are multicast addresses.
