@@ -262,3 +262,14 @@ Subnet use also enables your network to grow beyond 254 hosts and share IP addre
 With proper routing configuration, users might not even know they are on a different subnet from their co-workers.
 
 Another common use for subnetting is with networks that cover a wide geographic area.
+
+#### Subnet Masks
+
+TCP/IP uses subnet masks to show which part of an IP address is the network portion and which part is the host. Subnet masks are usually referred to as *netmasks*. For a pure Class A network, the netmask is 255.0.0.0; for a Class B network, the netmask is 255.255.0.0; and for a Class C network, the netmask is 255.255.255.0. 
+You can also use netmasks to deviate from the standard classes.
+
+By using customized netmasks, you can subnet your network to fit your needs.
+
+See *Sam's Teach Yourself TCP/IP Network Administration in 21 Days*, Day 6, "The Art of Subnet Masking".
+
+[Linux Network Administrator's Guide](http://www.tldp.org/LDP/nag2/index.html)
