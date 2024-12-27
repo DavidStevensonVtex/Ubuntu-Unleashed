@@ -188,3 +188,18 @@ Migrtation to IPv6 is slow in coming, however, because many computer operating s
 
 Three blocks of IP addresses are reserved for use on internal networks and hosts not directly connected to the Internet. The address ranges are from 10.0.0.0 to 10.255.255.255, or 1 Class A network; from 172.16.0.0 to 172.31.255.255, or 16 Class B networks, and from 192.168.0.0 to 192.168.255.255, 256 Class C networks. use these IP addresses when building a LAN for your business or home. Which class you choose can depend on the number of hosts on your network.
 
+#### Ports
+
+Most servers on your network perform more than one task. For example, web servers often have to serve both standard and secure pages.
+
+```
+cat /etc/services
+...
+ftp		21/tcp
+fsp		21/udp		fspd
+ssh		22/tcp				# SSH Remote Login Protocol
+telnet		23/tcp
+smtp		25/tcp		mail
+http		80/tcp		www		# WorldWideWeb HTTP
+pop3		110/tcp		pop-3		# POP version 3
+```
