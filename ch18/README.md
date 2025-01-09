@@ -283,3 +283,71 @@ Information can get to systems through three types of addresses: unicast, multic
 * **Multicasting** - Broadcasts information to groups of computers sharing an application, such as a video conferencing client or an online gaming application. All the machiens participating in the conference or game require the same information at precisely the same time to be effective.
 
 * **Broadcasting** - Transmits information to all the hosts on a network or subnet. *Dynamic Host Configuration Protocol (DHCP) uses broadcast messages when the DHCP client looks for a DHCP server to get its network settigns, and *Reverse Address Resolution Protocol (RARP) uses broadcast messages tfor hardware address-to-IP address resolution. Broadcast messages use .255 in all the host octets of the networ IP address. (10.2.255.255 broadcasts to every host in your class B network).
+
+### Hardware Devices for Networking
+
+#### Network Interface Cards
+
+Each NIC has a unique address (the hardware address, known as Media Access Control [MAC] address), which identifies that NIC.
+A MAC address looks similar to this: 00:60:08:8F:5A:D9.
+
+* DHCP - Dynamic Host Configuration Protocol
+* Address Resolution Protocol (ARP)
+* Reverse Address Resolution Protocol (RARP)
+
+##### Token Ring
+
+##### 10BASE-t
+
+##### 100BASE-T
+
+##### 1000BASE-T
+
+##### Fiber-Optic and Gigabit Ethernet
+
+##### Wireless Network Interfaces
+
+#### Network capable
+
+3 Types of Network cable
+
+1. coaxial
+2. UTP
+3. Fiber
+
+##### Unshielded Twisted Pair
+
+* Category 1 (Cat1)
+* Category 2 (Cat2)
+* Category 3 (Cat3)
+* Category 4 (Cat4)
+* Category 5 (Cat5)
+* Category 6 (Cat6)
+
+##### Fiber Optic cable
+
+#### Hubs and Switches
+
+Number of connections (ports): 4, 8, 16, 24, and 48
+
+#### Routers and Bridges
+
+##### Bridges
+
+##### Routers
+
+#### Initializing New Network Hardware
+
+Device file in the `/dev` directory.
+
+If you do not use automatic hardware detection and configuration, you can initialize network hardware by doing the following:
+
+* Manually editing the `/etc/modprobe.conf` file
+* Manually loading or unloading the new device's kernel module with the `modprobe` command
+
+##### Editing the `/etc/modprobe.conf` File
+
+##### Using `modprobe` to Manually Load Kernel Modules
+
+`dmesg`
+
