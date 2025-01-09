@@ -349,5 +349,116 @@ If you do not use automatic hardware detection and configuration, you can initia
 
 ##### Using `modprobe` to Manually Load Kernel Modules
 
+`sudo modprobe 8139too`
+
 `dmesg`
 
+
+#### Using Network Configuration Tools
+
+To configure a network client host using the command line, you can use a combination of commands or edit specific files under the `/etc` directory.
+
+Ubuntu's grapical tool: `nm-connection-editor`
+
+For anyone new to networking, using the `nm-connection-editor` graphical tool is the way to go.
+
+##### Command-Line Network Interface Configuration
+
+`ifconfig`
+
+```
+$ ip route
+default via 192.168.1.1 dev enp6s0 proto dhcp metric 100 
+169.254.0.0/16 dev enp6s0 scope link metric 1000 
+192.168.1.0/24 dev enp6s0 proto kernel scope link src 192.168.1.150 metric 100 
+```
+
+
+`ifconfig` is used to configure a network interface. You can use it to do the following:
+
+* Active or deactive your NIC or change your NIC's mode
+* Change your machine's IP address, netmask, or broadcast address
+* Create an IP alias to allow more than one IP address on your NIC
+* Set a destination address for a point to point connection
+
+`ifconfig [network device] options`
+
+ifconfig options
+
+* Create alias
+* Change IP address
+* Change the netmask
+* Change the broadcast
+* Take interface down
+* Bring interface down
+* SET NIC promiscuous
+* Set multicasting mode
+* Enable or disable
+
+To deactivate
+
+`sudo ifconfig eth0 down`
+
+To configure and activate and bring up the `eth0` interface with a specific IP address
+
+`sudo ifconfig eth0 192.168.2.9 netmask 255.255.255.0 up`
+
+
+Activate the interface according to a defined hostname:
+
+`sudo ifconfig eth0 catcat.fakeurl.com up`
+
+Get information about all your network interfaces:
+
+`sudo ip addr show`
+
+Assign an IP address to a specific interface:
+
+`sudo ip addr add 192.168.2.9 dev eth1`
+
+To remove an assigned IP address:
+
+`sudo ip addr del 192.168.2.9 dev eth1`
+
+Enable a network interface:
+
+`sudo ip link set eth1 up`
+
+Disable a network interface:
+
+`sudo ip link set eth1 down`
+
+Check the routing table:
+
+`sudo ip route show`
+
+To add a static route:
+
+`sudo ip route add 10.10.30.0/24 via 192.168.50.100 dev eth0`
+
+Remove a static route:
+
+`sudo ip route del 10.10.30.0/24
+
+To add a default gateway:
+
+`sudo ip route add default via 192.168.36.100`
+
+```
+$ ip route
+default via 192.168.1.1 dev enp6s0 proto dhcp metric 100 
+169.254.0.0/16 dev enp6s0 scope link metric 1000 
+192.168.1.0/24 dev enp6s0 proto kernel scope link src 192.168.1.150 metric 100 
+```
+
+`netstat`
+
+netstat options
+
+* -g
+* -i
+* -s
+* -v
+* -c
+* -e
+* -C
