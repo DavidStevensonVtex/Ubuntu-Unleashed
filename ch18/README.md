@@ -462,3 +462,24 @@ netstat options
 * -c
 * -e
 * -C
+
+#### Network Configuration Files
+
+* /etc/hosts
+* /etc/services
+* /etc/nsswitch.conf
+* /etc/resolve.conf
+* /etc/host.conf
+
+##### Adding Hosts to `/etc/hosts`
+
+##### Service Settings in `/etc/services`
+
+##### Using `/etc/nsswitch.conf` After Changing Naming Services
+
+##### Setting a Name Server with `/etc/resolv.conf`
+
+##### Setting DNS Search Order with `/etc/host.conf`
+
+#### Using Graphical Configuration Tools
+
