@@ -483,3 +483,51 @@ netstat options
 
 #### Using Graphical Configuration Tools
 
+### Dynamic Host Configuration Protocol (DHCP)
+
+Setting name server entries in `/etc/resolv.conf`
+
+
+#### How DHCP Works
+
+* Network subnet/host address - Enables host to connect to the network at will
+* Subnet/hostname - Enables the specified host to connect to the subnet
+* Subnet/hardware address -Enables specific client to connect to the network after getting the hostname from the DHCP
+
+#### Activating DHCP at Installation and Boot Time
+
+See: `/etc/network/interfaces`
+
+DHCP settings: `/etc/dhcp/dhclient.conf`
+
+```
+$ sudo dhclient
+[sudo] password for dstevenson: 
+RTNETLINK answers: File exists
+```
+
+#### DHCP Software Installation and Configuration
+
+##### DHCP `dhclient`
+
+DHCP is automatically enabled when you install Ubuntu.
+
+`dhclient.conf` options
+
+* timeout time;
+* retry time;
+* select-timeout time;
+* reboot time;
+* renew date;
+
+See the `dhclient.conf` man page for more information on additional settings.
+
+##### DHCP Server
+
+#### Using DHCP to Configure Network Hosts
+
+* Setting the domain name
+* Setting DNS servers
+* Setting the default and maximum lease times
+
+#### Other Uses for DHCP
