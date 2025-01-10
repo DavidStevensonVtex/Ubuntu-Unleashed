@@ -611,3 +611,24 @@ But a dynamic IP addres changes, and if someone needs to find you at the same ad
 Because your ISP cannot reuse that IP address for its other customers, it will likely charge you more for a static IP address than for a dynamic one.
 
 Average cosnumers do not need the benefit of a static IP address and so are happy with a dynamically assigned IP.
+
+#### Configuring Digital Subscriber Line Access
+
+#### Understanding PPP over Ethernet
+
+#### Configuring a PPPoE Connection Manually
+
+#### Configuring Dial-up Internet Access
+
+#### Troubleshooting Connection Problems
+
+Related Ubuntu and Linux Commands
+
+* dhclient
+* ethereal
+* ufw
+* ifconfig
+* iwconfig
+* route
+* ssh
+* nm-connection-editor
