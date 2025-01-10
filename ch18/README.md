@@ -632,3 +632,13 @@ Related Ubuntu and Linux Commands
 * route
 * ssh
 * nm-connection-editor
+
+### References
+
+* [Official Networking help for Ubuntu](https://help.ubuntu.com/18.04/serverguide/networking.html)
+* [Requests for Comments](http://www.ietf.org/rfc.html)
+* [Official site for DHCP](http://www.isc.org/products/DHCP/)
+* [IEEE Website](http://www.ieee.org/)
+* *Teach Yourself TCP/IP Network Administration in 21 Days by Joe Casad*
+* *TCP/IP Network Administration by Craig Hunt and Gigi Estabrook*
+* *The DHCP Handbook by Ralph Droms and Ted Lemon*
