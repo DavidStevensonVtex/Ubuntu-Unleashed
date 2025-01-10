@@ -592,3 +592,11 @@ enp6s0    Interface doesn't support wireless statistic collection
 
 The 802.11 standard specifies that wireless devices use a frequency range of 24000MHz to 2483.5MHz.
 
+### Beyond the Network and onto the Internet
+
+*Point-to-Point Protocol (PPP)*
+
+*Digital Subscriber Line (DSL)*
+
+Cable Modem Services
+
