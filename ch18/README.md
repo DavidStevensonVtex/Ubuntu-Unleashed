@@ -600,3 +600,14 @@ The 802.11 standard specifies that wireless devices use a frequency range of 240
 
 Cable Modem Services
 
+### Common Configuration Information
+
+Most IP addresses are assigned dynamically by ISPs. An ISP has a pool of addresses, and you get whatever address is available.
+
+For most Internet services, a dynamic IP address works well because it is the ISP's job to route that information to you, and it sits in the middle -- between you and the service you want to use.
+
+But a dynamic IP addres changes, and if someone needs to find you at the same addresss (if you run a website or a file transfer site, or example), an IP that changes every time you log on does not work well. For that you need a static IP address.
+
+Because your ISP cannot reuse that IP address for its other customers, it will likely charge you more for a static IP address than for a dynamic one.
+
+Average cosnumers do not need the benefit of a static IP address and so are happy with a dynamically assigned IP.
