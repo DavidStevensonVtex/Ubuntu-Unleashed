@@ -531,3 +531,59 @@ See the `dhclient.conf` man page for more information on additional settings.
 * Setting the default and maximum lease times
 
 #### Other Uses for DHCP
+
+### Wireless Networking
+
+#### Support for Wireless Networking in Ubuntu
+
+```
+$ iwconfig
+wlp5s0    IEEE 802.11  ESSID:off/any  
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
+          Retry short  long limit:2   RTS thr:off   Fragment thr:off
+          Power Management:off
+          
+lo        no wireless extensions.
+
+enp6s0    no wireless extensions.
+```
+
+```
+$ iwlist
+Usage: iwlist [interface] scanning [essid NNN] [last]
+              [interface] frequency 
+              [interface] channel 
+              [interface] bitrate 
+              [interface] rate 
+              [interface] encryption 
+              [interface] keys 
+              [interface] power 
+              [interface] txpower 
+              [interface] retry 
+              [interface] ap 
+              [interface] accesspoints 
+              [interface] peers 
+              [interface] event 
+              [interface] auth 
+              [interface] wpakeys 
+              [interface] genie 
+              [interface] modulation 
+```
+
+```
+$ iwpriv
+wlp5s0    no private ioctls.
+
+lo        no private ioctls.
+
+enp6s0    no private ioctls.
+```
+
+```
+$ iwspy
+wlp5s0    Interface doesn't support wireless statistic collection
+
+lo        Interface doesn't support wireless statistic collection
+
+enp6s0    Interface doesn't support wireless statistic collection
+```
